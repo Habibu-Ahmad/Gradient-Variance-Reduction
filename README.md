@@ -1,6 +1,8 @@
 
 # Gradient-Variance-Reduction
 
+GVR is a novel gradient-based optimizer that introduces a variance penalty between gradients computed on two augmented views of the same input. Inspired by consistency regularization and the geometry-aware motivation in SAM (Sharpness-Aware Minimization), GVR targets a new direction: minimizing *gradient variance* on the last layer to encourage stable and generalizable learning.
+
 <table>
   <tr>
     <td style="vertical-align: top; padding-right: 30px;">
