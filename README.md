@@ -1,3 +1,4 @@
+
 # Gradient-Variance-Reduction
 
 <table>
@@ -10,7 +11,7 @@
       </p>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/519d8c56-54ca-408d-a8a9-91f20cb13bd1" width="500" alt="gvr_sgd_accuracy1"/>
+      <img width="590" height="590" alt="gvr_sgd_accuracy1" src="https://github.com/user-attachments/assets/0099f9ef-304c-4218-9a2e-917d70560f33" />
     </td>
   </tr>
 </table>
