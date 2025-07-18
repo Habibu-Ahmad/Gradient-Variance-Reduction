@@ -10,7 +10,7 @@
       </p>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/519d8c56-54ca-408d-a8a9-91f20cb13bd1" width="500" alt="gvr_sgd_accuracy"/>
+      <img src="https://github.com/user-attachments/assets/519d8c56-54ca-408d-a8a9-91f20cb13bd1" width="500" alt="gvr_sgd_accuracy1"/>
     </td>
   </tr>
 </table>
