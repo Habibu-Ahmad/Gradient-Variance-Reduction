@@ -12,7 +12,18 @@ Given two augmented views of the same input, `img1` and `img2`, and a shared lab
 
 
 This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations, improving generalization and potential robustness to label noise.
-Note that, for efficiency, gradients are computed only with respect to the last layer and the views are subsampled independently during each forward pass.
+>  For efficiency, gradients are typically computed only with respect to the **last layer**, and the views are **subsampled independently** during each forward pass.
+##  How It Works
+
+The GVR optimizer performs the following during a training step:
+
+1. Takes two augmented versions of the same input (`img1`, `img2`) and their label.
+2. Computes model outputs and gradients for both views separately.
+3. Calculates a penalty term based on the **squared difference between the gradients**.
+4. Combines both losses with the penalty, performs backpropagation, and updates parameters using the base optimizer.
+
+This process **reduces the variance between gradients from different augmentations**, improving **generalization**.
+
 
 **Code Snippet: GVR Step**
 ```python
