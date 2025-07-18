@@ -25,16 +25,14 @@ grads2 = torch.autograd.grad(loss2, model.parameters(), create_graph=True)
 penalty = sum(((g1 - g2)**2).sum() for g1, g2 in zip(grads1, grads2))
 total_loss = loss1 + loss2 + alpha * penalty
 ```
-##  Performance on CIFAR-100 (ResNet-18)
+## Experimental Setups
 <table>
   <tr>
     <td style="vertical-align: top; padding-right: 30px;">
       <p>       
-      We evaluated the proposed <strong>Gradient Variance Regularization (GVR)</strong> optimizer against standard SGD on CIFAR-100 using ResNet-18.
+      The proposed <strong>GVR</strong> was compared against  SGD on CIFAR-100 using ResNet-18.
         Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
-        <br/><br/>
-        SGD hyperparameters followed the SAM paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
-        <br/><br/>
+        SGD hyperparameters followed the SAM (Sharpness Aware Minimization) paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
         GVR achieved <strong>79.09%</strong> test accuracy, outperforming SGD at <strong>78.00%</strong>.
       </p>
     </td>
