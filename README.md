@@ -4,7 +4,7 @@
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
       <p>
-        We evaluated the proposed <strong>Gradient Variance Regularization (GVR)</strong> optimizer against standard SGD on CIFAR-100 using ResNet-18.
+        The proposed <strong>GVR</strong> optimizer is compared against SGD on CIFAR-100 using ResNet-18.
         Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
         <br/><br/>
         SGD hyperparameters followed the SAM paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
