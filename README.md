@@ -26,21 +26,27 @@ penalty = sum(((g1 - g2)**2).sum() for g1, g2 in zip(grads1, grads2))
 total_loss = loss1 + loss2 + alpha * penalty
 ```
 ## Experimental Setups
+<p>
+  The proposed <strong>GVR</strong> was compared against SGD on CIFAR-100 using ResNet-18.  
+  Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).  
+  SGD hyperparameters followed the SAM (Sharpness-Aware Minimization) paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
+</p>
+
 <table>
   <tr>
-    <td style="vertical-align: top; padding-right: 30px;">
-      <p>       
-      The proposed <strong>GVR</strong> was compared against  SGD on CIFAR-100 using ResNet-18.
-        Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
-        SGD hyperparameters followed the SAM (Sharpness Aware Minimization) paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
-        GVR achieved <strong>79.09%</strong> test accuracy, outperforming SGD at <strong>78.00%</strong>.
-      </p>
-    </td>
     <td>
       <img width="275" height="290" alt="gvr_sgd" src="https://github.com/user-attachments/assets/48253002-6385-48b2-a901-cb1fb13761ea" />
     </td>
+    <td style="vertical-align: top; padding-left: 20px;">
+      <p><strong>Test Accuracy:</strong></p>
+      <ul>
+        <li><strong>GVR:</strong> 79.09%</li>
+        <li><strong>SGD:</strong> 78.00%</li>
+      </ul>
+    </td>
   </tr>
 </table>
+
 
 ## Project Structure 
 <pre><code>.
