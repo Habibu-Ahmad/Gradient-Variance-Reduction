@@ -3,7 +3,7 @@
 
 GVR is a novel gradient-based optimizer that introduces a variance penalty between gradients computed on two augmented views of the same input. Inspired by consistency regularization and the geometry-aware motivation in SAM (Sharpness-Aware Minimization), GVR targets a new direction: minimizing *gradient variance* on the last layer to encourage stable and generalizable learning.
 
-###  Core Idea
+##  Core Idea
 
 Given two augmented views of the same input, `img1` and `img2`, and a shared label `y`, GVR minimizes:
 
@@ -31,7 +31,13 @@ total_loss = loss1 + loss2 + alpha * penalty
     <td style="vertical-align: top; padding-right: 30px;">
       <p> 
       </p>
-      hhhhhhhhhhhhhh
+      We evaluated the proposed <strong>Gradient Variance Regularization (GVR)</strong> optimizer against standard SGD on CIFAR-100 using ResNet-18.
+        Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
+        <br/><br/>
+        SGD hyperparameters followed the SAM paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
+        <br/><br/>
+        GVR achieved <strong>79.09%</strong> test accuracy, outperforming SGD at <strong>78.00%</strong>.
+
     </td>
     <td>
       <img width="590" height="590" alt="gvr_sgd_accuracy1" src="https://github.com/user-attachments/assets/0099f9ef-304c-4218-9a2e-917d70560f33" />
