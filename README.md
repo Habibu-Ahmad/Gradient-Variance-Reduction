@@ -39,7 +39,7 @@ total_loss = loss1 + loss2 + alpha * penalty
       </p>
     </td>
     <td>
-      <img width="590" height="590" alt="gvr_sgd_accuracy1" src="https://github.com/user-attachments/assets/0099f9ef-304c-4218-9a2e-917d70560f33" />
+      <img width="275" height="290" alt="gvr_sgd" src="https://github.com/user-attachments/assets/48253002-6385-48b2-a901-cb1fb13761ea" />
     </td>
   </tr>
 </table>
