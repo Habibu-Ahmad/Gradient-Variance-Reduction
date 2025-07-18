@@ -5,8 +5,6 @@ GVR is a novel gradient-based optimizer that introduces a variance penalty betwe
 
 ###  Core Idea
 
-**🧪 Core Idea**
-
 Given two augmented views of the same input, `img1` and `img2`, and a shared label `y`, GVR minimizes:
 
 <img width="1299" height="271" alt="gvr_eq" src="https://github.com/user-attachments/assets/329a058f-6ceb-4291-9801-0ddcef3b8860" />
@@ -15,9 +13,7 @@ Given two augmented views of the same input, `img1` and `img2`, and a shared lab
 
 This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations, improving generalization and potential robustness to label noise.
 
-This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations — leading to better generalization and potential robustness to label noise.
-
-## Code Snippet: GVR Step
+**Code Snippet: GVR Step**
 ```python
 loss1 = criterion(model(img1), y)
 grads1 = torch.autograd.grad(loss1, model.parameters(), create_graph=True)
