@@ -1,0 +1,1437 @@
+--- Arguments ---
+arch: resnet18
+datasets: CIFAR100
+epochs: 200
+start_epoch: 0
+batch_size: 128
+lr: 0.05
+momentum: 0.9
+weight_decay: 0.0005
+print_freq: 200
+workers: 4
+cutout: True
+noise_ratio: 0.2
+noise_mode: sym
+alpha: 0.001
+seed: 42
+gpu: None
+log_file: sgd_resnet18_cifar100_clean_epochs200.log
+optimizer: sgd
+adaptive: False
+data_root: ./datasets/
+-----------------
+Using CPU or default GPU.
+Ensuring CIFAR100 dataset is downloaded to ./datasets/...
+CIFAR100 dataset check/download complete.
+Model: resnet18
+Using Cutout for data augmentation.
+Loading CIFAR100 dataset (clean).
+Using standard SGD optimizer
+
+Starting training...
+
+
+Epoch 0 started...
+Epoch: [0][0/391]	Time 0.680 (0.680)	Data 0.193 (0.193)	Total Loss 4.7836 (4.7836)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 12.500 (12.500)
+Epoch: [0][200/391]	Time 0.022 (0.028)	Data 0.000 (0.003)	Total Loss 3.8904 (4.1284)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 9.375 (8.625)
+Train: [Average Loss 3.9373]	[Accuracy 10.972]
+Test: [Average Loss 3.6082]	[Accuracy 13.820]
+Current learning rate: 0.049997
+
+Epoch 1 started...
+Epoch: [1][0/391]	Time 0.200 (0.200)	Data 0.172 (0.172)	Total Loss 3.5451 (3.5451)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 13.281 (13.281)
+Epoch: [1][200/391]	Time 0.038 (0.027)	Data 0.016 (0.004)	Total Loss 3.3066 (3.4705)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 16.406 (18.385)
+Train: [Average Loss 3.3714]	[Accuracy 20.470]
+Test: [Average Loss 3.1577]	[Accuracy 21.770]
+Current learning rate: 0.049988
+
+Epoch 2 started...
+Epoch: [2][0/391]	Time 0.206 (0.206)	Data 0.171 (0.171)	Total Loss 3.1461 (3.1461)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 25.000 (25.000)
+Epoch: [2][200/391]	Time 0.025 (0.026)	Data 0.000 (0.003)	Total Loss 2.9487 (3.0559)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 28.906 (27.095)
+Train: [Average Loss 2.9663]	[Accuracy 28.928]
+Test: [Average Loss 2.7098]	[Accuracy 30.670]
+Current learning rate: 0.049972
+
+Epoch 3 started...
+Epoch: [3][0/391]	Time 0.198 (0.198)	Data 0.170 (0.170)	Total Loss 2.7604 (2.7604)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 39.844 (39.844)
+Epoch: [3][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 2.3878 (2.6674)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 38.281 (35.479)
+Train: [Average Loss 2.5944]	[Accuracy 36.756]
+Test: [Average Loss 2.4149]	[Accuracy 36.860]
+Current learning rate: 0.049951
+
+Epoch 4 started...
+Epoch: [4][0/391]	Time 0.198 (0.198)	Data 0.170 (0.170)	Total Loss 2.5155 (2.5155)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 35.938 (35.938)
+Epoch: [4][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 2.3134 (2.3333)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 45.312 (42.743)
+Train: [Average Loss 2.2963]	[Accuracy 43.810]
+Test: [Average Loss 2.1278]	[Accuracy 42.840]
+Current learning rate: 0.049923
+
+Epoch 5 started...
+Epoch: [5][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 2.2222 (2.2222)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 45.312 (45.312)
+Epoch: [5][200/391]	Time 0.033 (0.026)	Data 0.009 (0.003)	Total Loss 2.0004 (2.0892)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 52.344 (49.110)
+Train: [Average Loss 2.0606]	[Accuracy 49.746]
+Test: [Average Loss 1.9787]	[Accuracy 46.030]
+Current learning rate: 0.049889
+
+Epoch 6 started...
+Epoch: [6][0/391]	Time 0.226 (0.226)	Data 0.197 (0.197)	Total Loss 2.1475 (2.1475)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 43.750 (43.750)
+Epoch: [6][200/391]	Time 0.035 (0.026)	Data 0.013 (0.003)	Total Loss 1.8975 (1.9021)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 53.906 (53.759)
+Train: [Average Loss 1.8835]	[Accuracy 54.346]
+Test: [Average Loss 1.7192]	[Accuracy 52.730]
+Current learning rate: 0.049849
+
+Epoch 7 started...
+Epoch: [7][0/391]	Time 0.210 (0.210)	Data 0.175 (0.175)	Total Loss 1.8946 (1.8946)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 53.125 (53.125)
+Epoch: [7][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 1.8399 (1.7534)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 56.250 (57.160)
+Train: [Average Loss 1.7477]	[Accuracy 57.312]
+Test: [Average Loss 1.6509]	[Accuracy 53.680]
+Current learning rate: 0.049803
+
+Epoch 8 started...
+Epoch: [8][0/391]	Time 0.203 (0.203)	Data 0.167 (0.167)	Total Loss 1.6103 (1.6103)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 60.156 (60.156)
+Epoch: [8][200/391]	Time 0.021 (0.026)	Data 0.000 (0.002)	Total Loss 1.5768 (1.6259)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 66.406 (60.766)
+Train: [Average Loss 1.6331]	[Accuracy 60.602]
+Test: [Average Loss 1.6047]	[Accuracy 55.100]
+Current learning rate: 0.049751
+
+Epoch 9 started...
+Epoch: [9][0/391]	Time 0.206 (0.206)	Data 0.173 (0.173)	Total Loss 1.9452 (1.9452)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 56.250 (56.250)
+Epoch: [9][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 1.6926 (1.5407)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 61.719 (63.693)
+Train: [Average Loss 1.5515]	[Accuracy 63.150]
+Test: [Average Loss 1.6680]	[Accuracy 54.060]
+Current learning rate: 0.049692
+
+Epoch 10 started...
+Epoch: [10][0/391]	Time 0.207 (0.207)	Data 0.172 (0.172)	Total Loss 1.5109 (1.5109)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 60.156 (60.156)
+Epoch: [10][200/391]	Time 0.024 (0.025)	Data 0.000 (0.003)	Total Loss 1.5263 (1.4590)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 64.844 (65.718)
+Train: [Average Loss 1.4801]	[Accuracy 65.320]
+Test: [Average Loss 1.4803]	[Accuracy 58.280]
+Current learning rate: 0.049628
+
+Epoch 11 started...
+Epoch: [11][0/391]	Time 0.216 (0.216)	Data 0.180 (0.180)	Total Loss 1.3882 (1.3882)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 65.625 (65.625)
+Epoch: [11][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 1.2653 (1.3961)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 71.094 (67.724)
+Train: [Average Loss 1.4164]	[Accuracy 67.278]
+Test: [Average Loss 1.4579]	[Accuracy 58.350]
+Current learning rate: 0.049557
+
+Epoch 12 started...
+Epoch: [12][0/391]	Time 0.198 (0.198)	Data 0.172 (0.172)	Total Loss 1.2816 (1.2816)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 72.656 (72.656)
+Epoch: [12][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 1.4489 (1.3488)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 69.531 (69.492)
+Train: [Average Loss 1.3695]	[Accuracy 69.020]
+Test: [Average Loss 1.4209]	[Accuracy 59.930]
+Current learning rate: 0.049481
+
+Epoch 13 started...
+Epoch: [13][0/391]	Time 0.208 (0.208)	Data 0.181 (0.181)	Total Loss 1.3141 (1.3141)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 68.750 (68.750)
+Epoch: [13][200/391]	Time 0.037 (0.026)	Data 0.015 (0.004)	Total Loss 1.3239 (1.2960)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 66.406 (71.304)
+Train: [Average Loss 1.3197]	[Accuracy 70.798]
+Test: [Average Loss 1.3824]	[Accuracy 60.950]
+Current learning rate: 0.049398
+
+Epoch 14 started...
+Epoch: [14][0/391]	Time 0.217 (0.217)	Data 0.187 (0.187)	Total Loss 1.2810 (1.2810)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 67.188 (67.188)
+Epoch: [14][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 1.4010 (1.2550)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 66.406 (72.851)
+Train: [Average Loss 1.2834]	[Accuracy 72.002]
+Test: [Average Loss 1.4024]	[Accuracy 61.010]
+Current learning rate: 0.049309
+
+Epoch 15 started...
+Epoch: [15][0/391]	Time 0.203 (0.203)	Data 0.171 (0.171)	Total Loss 1.0761 (1.0761)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.125 (78.125)
+Epoch: [15][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 1.3930 (1.2333)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 68.750 (73.379)
+Train: [Average Loss 1.2530]	[Accuracy 72.966]
+Test: [Average Loss 1.4855]	[Accuracy 59.370]
+Current learning rate: 0.049215
+
+Epoch 16 started...
+Epoch: [16][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 1.0591 (1.0591)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.125 (78.125)
+Epoch: [16][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.9895 (1.1957)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.906 (75.066)
+Train: [Average Loss 1.2161]	[Accuracy 74.514]
+Test: [Average Loss 1.4051]	[Accuracy 60.770]
+Current learning rate: 0.049114
+
+Epoch 17 started...
+Epoch: [17][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 1.1576 (1.1576)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 77.344 (77.344)
+Epoch: [17][200/391]	Time 0.026 (0.026)	Data 0.000 (0.003)	Total Loss 1.3865 (1.1550)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 72.656 (76.415)
+Train: [Average Loss 1.1919]	[Accuracy 75.390]
+Test: [Average Loss 1.3343]	[Accuracy 62.980]
+Current learning rate: 0.049007
+
+Epoch 18 started...
+Epoch: [18][0/391]	Time 0.210 (0.210)	Data 0.173 (0.173)	Total Loss 1.0293 (1.0293)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 76.562 (76.562)
+Epoch: [18][200/391]	Time 0.029 (0.026)	Data 0.000 (0.003)	Total Loss 1.0933 (1.1377)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.125 (76.407)
+Train: [Average Loss 1.1618]	[Accuracy 76.108]
+Test: [Average Loss 1.3465]	[Accuracy 63.020]
+Current learning rate: 0.048895
+
+Epoch 19 started...
+Epoch: [19][0/391]	Time 0.203 (0.203)	Data 0.177 (0.177)	Total Loss 1.0322 (1.0322)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 80.469 (80.469)
+Epoch: [19][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.9403 (1.1109)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 81.250 (77.631)
+Train: [Average Loss 1.1409]	[Accuracy 76.846]
+Test: [Average Loss 1.3273]	[Accuracy 63.590]
+Current learning rate: 0.048776
+
+Epoch 20 started...
+Epoch: [20][0/391]	Time 0.199 (0.199)	Data 0.171 (0.171)	Total Loss 1.0086 (1.0086)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 81.250 (81.250)
+Epoch: [20][200/391]	Time 0.024 (0.025)	Data 0.000 (0.003)	Total Loss 1.1941 (1.0750)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 71.875 (78.405)
+Train: [Average Loss 1.1077]	[Accuracy 77.830]
+Test: [Average Loss 1.3329]	[Accuracy 62.670]
+Current learning rate: 0.048652
+
+Epoch 21 started...
+Epoch: [21][0/391]	Time 0.205 (0.205)	Data 0.177 (0.177)	Total Loss 0.9419 (0.9419)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.125 (78.125)
+Epoch: [21][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 1.0180 (1.0775)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 80.469 (79.073)
+Train: [Average Loss 1.1023]	[Accuracy 78.444]
+Test: [Average Loss 1.3516]	[Accuracy 63.080]
+Current learning rate: 0.048522
+
+Epoch 22 started...
+Epoch: [22][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.9840 (0.9840)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 77.344 (77.344)
+Epoch: [22][200/391]	Time 0.041 (0.028)	Data 0.018 (0.005)	Total Loss 0.8764 (1.0378)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (80.166)
+Train: [Average Loss 1.0679]	[Accuracy 79.414]
+Test: [Average Loss 1.2830]	[Accuracy 64.300]
+Current learning rate: 0.048386
+
+Epoch 23 started...
+Epoch: [23][0/391]	Time 0.207 (0.207)	Data 0.181 (0.181)	Total Loss 1.1811 (1.1811)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 78.906 (78.906)
+Epoch: [23][200/391]	Time 0.034 (0.027)	Data 0.013 (0.004)	Total Loss 1.1351 (1.0319)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 76.562 (80.395)
+Train: [Average Loss 1.0554]	[Accuracy 79.858]
+Test: [Average Loss 1.4017]	[Accuracy 62.410]
+Current learning rate: 0.048244
+
+Epoch 24 started...
+Epoch: [24][0/391]	Time 0.207 (0.207)	Data 0.172 (0.172)	Total Loss 0.8729 (0.8729)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (85.156)
+Epoch: [24][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 1.0742 (1.0177)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 80.469 (80.916)
+Train: [Average Loss 1.0470]	[Accuracy 80.400]
+Test: [Average Loss 1.2544]	[Accuracy 65.270]
+Current learning rate: 0.048097
+
+Epoch 25 started...
+Epoch: [25][0/391]	Time 0.198 (0.198)	Data 0.168 (0.168)	Total Loss 0.9996 (0.9996)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.031 (82.031)
+Epoch: [25][200/391]	Time 0.026 (0.027)	Data 0.000 (0.004)	Total Loss 0.9581 (0.9937)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.938 (81.448)
+Train: [Average Loss 1.0232]	[Accuracy 80.844]
+Test: [Average Loss 1.3188]	[Accuracy 63.880]
+Current learning rate: 0.047944
+
+Epoch 26 started...
+Epoch: [26][0/391]	Time 0.200 (0.200)	Data 0.174 (0.174)	Total Loss 0.8227 (0.8227)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (86.719)
+Epoch: [26][200/391]	Time 0.026 (0.026)	Data 0.000 (0.003)	Total Loss 1.0131 (0.9885)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.031 (81.961)
+Train: [Average Loss 1.0073]	[Accuracy 81.612]
+Test: [Average Loss 1.2527]	[Accuracy 65.800]
+Current learning rate: 0.047785
+
+Epoch 27 started...
+Epoch: [27][0/391]	Time 0.205 (0.205)	Data 0.169 (0.169)	Total Loss 1.1133 (1.1133)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.812 (82.812)
+Epoch: [27][200/391]	Time 0.034 (0.026)	Data 0.012 (0.003)	Total Loss 0.9231 (0.9675)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (82.797)
+Train: [Average Loss 0.9948]	[Accuracy 82.054]
+Test: [Average Loss 1.3133]	[Accuracy 64.130]
+Current learning rate: 0.047621
+
+Epoch 28 started...
+Epoch: [28][0/391]	Time 0.212 (0.212)	Data 0.177 (0.177)	Total Loss 0.8460 (0.8460)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.812 (82.812)
+Epoch: [28][200/391]	Time 0.035 (0.026)	Data 0.012 (0.003)	Total Loss 0.9380 (0.9446)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 83.594 (83.088)
+Train: [Average Loss 0.9775]	[Accuracy 82.442]
+Test: [Average Loss 1.3744]	[Accuracy 62.720]
+Current learning rate: 0.047451
+
+Epoch 29 started...
+Epoch: [29][0/391]	Time 0.208 (0.208)	Data 0.174 (0.174)	Total Loss 0.8848 (0.8848)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (85.156)
+Epoch: [29][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 1.0449 (0.9409)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 76.562 (83.357)
+Train: [Average Loss 0.9768]	[Accuracy 82.524]
+Test: [Average Loss 1.3544]	[Accuracy 63.580]
+Current learning rate: 0.047275
+
+Epoch 30 started...
+Epoch: [30][0/391]	Time 0.206 (0.206)	Data 0.179 (0.179)	Total Loss 0.8187 (0.8187)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (87.500)
+Epoch: [30][200/391]	Time 0.025 (0.025)	Data 0.000 (0.003)	Total Loss 0.8457 (0.9294)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.812 (84.033)
+Train: [Average Loss 0.9569]	[Accuracy 83.318]
+Test: [Average Loss 1.3967]	[Accuracy 62.460]
+Current learning rate: 0.047094
+
+Epoch 31 started...
+Epoch: [31][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.7252 (0.7252)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.062 (89.062)
+Epoch: [31][200/391]	Time 0.040 (0.027)	Data 0.018 (0.004)	Total Loss 0.9381 (0.9206)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (84.340)
+Train: [Average Loss 0.9486]	[Accuracy 83.506]
+Test: [Average Loss 1.2541]	[Accuracy 65.860]
+Current learning rate: 0.046908
+
+Epoch 32 started...
+Epoch: [32][0/391]	Time 0.206 (0.206)	Data 0.168 (0.168)	Total Loss 0.9080 (0.9080)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 83.594 (83.594)
+Epoch: [32][200/391]	Time 0.023 (0.027)	Data 0.001 (0.003)	Total Loss 0.6650 (0.8864)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (85.183)
+Train: [Average Loss 0.9294]	[Accuracy 84.334]
+Test: [Average Loss 1.2508]	[Accuracy 65.740]
+Current learning rate: 0.046716
+
+Epoch 33 started...
+Epoch: [33][0/391]	Time 0.205 (0.205)	Data 0.177 (0.177)	Total Loss 0.8768 (0.8768)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.031 (82.031)
+Epoch: [33][200/391]	Time 0.028 (0.027)	Data 0.007 (0.003)	Total Loss 0.9517 (0.8698)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.812 (85.487)
+Train: [Average Loss 0.9156]	[Accuracy 84.508]
+Test: [Average Loss 1.2623]	[Accuracy 65.300]
+Current learning rate: 0.046519
+
+Epoch 34 started...
+Epoch: [34][0/391]	Time 0.204 (0.204)	Data 0.169 (0.169)	Total Loss 0.9424 (0.9424)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 83.594 (83.594)
+Epoch: [34][200/391]	Time 0.021 (0.028)	Data 0.000 (0.004)	Total Loss 0.8894 (0.8754)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (85.588)
+Train: [Average Loss 0.9060]	[Accuracy 84.900]
+Test: [Average Loss 1.2719]	[Accuracy 65.830]
+Current learning rate: 0.046316
+
+Epoch 35 started...
+Epoch: [35][0/391]	Time 0.206 (0.206)	Data 0.179 (0.179)	Total Loss 0.6031 (0.6031)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [35][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.8964 (0.8557)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (86.303)
+Train: [Average Loss 0.9001]	[Accuracy 85.206]
+Test: [Average Loss 1.2695]	[Accuracy 65.700]
+Current learning rate: 0.046108
+
+Epoch 36 started...
+Epoch: [36][0/391]	Time 0.206 (0.206)	Data 0.178 (0.178)	Total Loss 0.8872 (0.8872)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (86.719)
+Epoch: [36][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.8578 (0.8564)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (86.050)
+Train: [Average Loss 0.8837]	[Accuracy 85.542]
+Test: [Average Loss 1.2908]	[Accuracy 65.460]
+Current learning rate: 0.045895
+
+Epoch 37 started...
+Epoch: [37][0/391]	Time 0.211 (0.211)	Data 0.182 (0.182)	Total Loss 0.7580 (0.7580)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.062 (89.062)
+Epoch: [37][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 0.7728 (0.8447)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (86.528)
+Train: [Average Loss 0.8714]	[Accuracy 86.016]
+Test: [Average Loss 1.3040]	[Accuracy 64.930]
+Current learning rate: 0.045677
+
+Epoch 38 started...
+Epoch: [38][0/391]	Time 0.228 (0.228)	Data 0.192 (0.192)	Total Loss 0.9395 (0.9395)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (86.719)
+Epoch: [38][200/391]	Time 0.030 (0.026)	Data 0.007 (0.004)	Total Loss 0.7677 (0.8317)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.062 (86.991)
+Train: [Average Loss 0.8574]	[Accuracy 86.494]
+Test: [Average Loss 1.2648]	[Accuracy 65.920]
+Current learning rate: 0.045454
+
+Epoch 39 started...
+Epoch: [39][0/391]	Time 0.207 (0.207)	Data 0.173 (0.173)	Total Loss 0.6819 (0.6819)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [39][200/391]	Time 0.029 (0.026)	Data 0.005 (0.003)	Total Loss 0.5936 (0.8353)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (86.952)
+Train: [Average Loss 0.8701]	[Accuracy 86.348]
+Test: [Average Loss 1.2948]	[Accuracy 64.970]
+Current learning rate: 0.045225
+
+Epoch 40 started...
+Epoch: [40][0/391]	Time 0.202 (0.202)	Data 0.172 (0.172)	Total Loss 0.9650 (0.9650)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 82.031 (82.031)
+Epoch: [40][200/391]	Time 0.025 (0.027)	Data 0.004 (0.004)	Total Loss 0.8917 (0.8055)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (87.881)
+Train: [Average Loss 0.8502]	[Accuracy 86.790]
+Test: [Average Loss 1.3050]	[Accuracy 65.380]
+Current learning rate: 0.044992
+
+Epoch 41 started...
+Epoch: [41][0/391]	Time 0.215 (0.215)	Data 0.187 (0.187)	Total Loss 0.9274 (0.9274)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (86.719)
+Epoch: [41][200/391]	Time 0.023 (0.027)	Data 0.000 (0.004)	Total Loss 0.8660 (0.8161)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (87.337)
+Train: [Average Loss 0.8446]	[Accuracy 86.944]
+Test: [Average Loss 1.2580]	[Accuracy 66.220]
+Current learning rate: 0.044754
+
+Epoch 42 started...
+Epoch: [42][0/391]	Time 0.202 (0.202)	Data 0.168 (0.168)	Total Loss 0.8329 (0.8329)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (87.500)
+Epoch: [42][200/391]	Time 0.021 (0.026)	Data 0.000 (0.002)	Total Loss 0.9989 (0.7925)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (88.110)
+Train: [Average Loss 0.8264]	[Accuracy 87.424]
+Test: [Average Loss 1.2244]	[Accuracy 66.460]
+Current learning rate: 0.044511
+
+Epoch 43 started...
+Epoch: [43][0/391]	Time 0.203 (0.203)	Data 0.177 (0.177)	Total Loss 0.6821 (0.6821)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (90.625)
+Epoch: [43][200/391]	Time 0.023 (0.027)	Data 0.000 (0.003)	Total Loss 0.7538 (0.7928)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (88.258)
+Train: [Average Loss 0.8258]	[Accuracy 87.552]
+Test: [Average Loss 1.2709]	[Accuracy 65.990]
+Current learning rate: 0.044263
+
+Epoch 44 started...
+Epoch: [44][0/391]	Time 0.196 (0.196)	Data 0.168 (0.168)	Total Loss 0.7731 (0.7731)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (87.500)
+Epoch: [44][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.6232 (0.7936)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (88.262)
+Train: [Average Loss 0.8193]	[Accuracy 87.716]
+Test: [Average Loss 1.2512]	[Accuracy 66.560]
+Current learning rate: 0.044010
+
+Epoch 45 started...
+Epoch: [45][0/391]	Time 0.210 (0.210)	Data 0.176 (0.176)	Total Loss 0.8635 (0.8635)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (87.500)
+Epoch: [45][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.9637 (0.7698)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (89.008)
+Train: [Average Loss 0.8002]	[Accuracy 88.274]
+Test: [Average Loss 1.2363]	[Accuracy 67.770]
+Current learning rate: 0.043753
+
+Epoch 46 started...
+Epoch: [46][0/391]	Time 0.236 (0.236)	Data 0.209 (0.209)	Total Loss 0.8321 (0.8321)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 83.594 (83.594)
+Epoch: [46][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.8019 (0.7557)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.187)
+Train: [Average Loss 0.7926]	[Accuracy 88.444]
+Test: [Average Loss 1.2684]	[Accuracy 66.250]
+Current learning rate: 0.043491
+
+Epoch 47 started...
+Epoch: [47][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.7184 (0.7184)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.844)
+Epoch: [47][200/391]	Time 0.022 (0.027)	Data 0.000 (0.004)	Total Loss 0.6140 (0.7465)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (89.618)
+Train: [Average Loss 0.7879]	[Accuracy 88.684]
+Test: [Average Loss 1.2906]	[Accuracy 65.890]
+Current learning rate: 0.043224
+
+Epoch 48 started...
+Epoch: [48][0/391]	Time 0.200 (0.200)	Data 0.173 (0.173)	Total Loss 0.9233 (0.9233)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.156 (85.156)
+Epoch: [48][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 1.0846 (0.7412)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (89.440)
+Train: [Average Loss 0.7847]	[Accuracy 88.724]
+Test: [Average Loss 1.3297]	[Accuracy 65.700]
+Current learning rate: 0.042953
+
+Epoch 49 started...
+Epoch: [49][0/391]	Time 0.223 (0.223)	Data 0.195 (0.195)	Total Loss 0.7533 (0.7533)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (90.625)
+Epoch: [49][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.8095 (0.7490)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (89.665)
+Train: [Average Loss 0.7793]	[Accuracy 89.032]
+Test: [Average Loss 1.2533]	[Accuracy 66.330]
+Current learning rate: 0.042678
+
+Epoch 50 started...
+Epoch: [50][0/391]	Time 0.224 (0.224)	Data 0.198 (0.198)	Total Loss 0.5910 (0.5910)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (90.625)
+Epoch: [50][200/391]	Time 0.040 (0.027)	Data 0.017 (0.004)	Total Loss 0.8048 (0.7241)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (90.093)
+Train: [Average Loss 0.7660]	[Accuracy 89.292]
+Test: [Average Loss 1.2792]	[Accuracy 66.480]
+Current learning rate: 0.042398
+
+Epoch 51 started...
+Epoch: [51][0/391]	Time 0.215 (0.215)	Data 0.186 (0.186)	Total Loss 0.6864 (0.6864)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.844)
+Epoch: [51][200/391]	Time 0.022 (0.027)	Data 0.000 (0.003)	Total Loss 0.8839 (0.7226)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (90.155)
+Train: [Average Loss 0.7663]	[Accuracy 89.258]
+Test: [Average Loss 1.2759]	[Accuracy 67.110]
+Current learning rate: 0.042114
+
+Epoch 52 started...
+Epoch: [52][0/391]	Time 0.204 (0.204)	Data 0.172 (0.172)	Total Loss 0.5647 (0.5647)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [52][200/391]	Time 0.037 (0.026)	Data 0.016 (0.004)	Total Loss 0.9073 (0.7099)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 85.938 (90.299)
+Train: [Average Loss 0.7548]	[Accuracy 89.496]
+Test: [Average Loss 1.2734]	[Accuracy 67.220]
+Current learning rate: 0.041825
+
+Epoch 53 started...
+Epoch: [53][0/391]	Time 0.205 (0.205)	Data 0.177 (0.177)	Total Loss 0.9295 (0.9295)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (87.500)
+Epoch: [53][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.9061 (0.7130)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.062 (90.559)
+Train: [Average Loss 0.7505]	[Accuracy 89.722]
+Test: [Average Loss 1.2406]	[Accuracy 67.300]
+Current learning rate: 0.041533
+
+Epoch 54 started...
+Epoch: [54][0/391]	Time 0.206 (0.206)	Data 0.172 (0.172)	Total Loss 0.7595 (0.7595)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (88.281)
+Epoch: [54][200/391]	Time 0.045 (0.026)	Data 0.017 (0.004)	Total Loss 0.8341 (0.7074)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 86.719 (90.594)
+Train: [Average Loss 0.7386]	[Accuracy 89.890]
+Test: [Average Loss 1.2198]	[Accuracy 68.010]
+Current learning rate: 0.041236
+
+Epoch 55 started...
+Epoch: [55][0/391]	Time 0.202 (0.202)	Data 0.174 (0.174)	Total Loss 0.5872 (0.5872)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [55][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.7347 (0.6779)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (91.177)
+Train: [Average Loss 0.7274]	[Accuracy 90.098]
+Test: [Average Loss 1.2430]	[Accuracy 67.470]
+Current learning rate: 0.040936
+
+Epoch 56 started...
+Epoch: [56][0/391]	Time 0.215 (0.215)	Data 0.181 (0.181)	Total Loss 0.5898 (0.5898)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [56][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.7187 (0.6796)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (91.391)
+Train: [Average Loss 0.7200]	[Accuracy 90.406]
+Test: [Average Loss 1.2382]	[Accuracy 67.370]
+Current learning rate: 0.040631
+
+Epoch 57 started...
+Epoch: [57][0/391]	Time 0.201 (0.201)	Data 0.174 (0.174)	Total Loss 0.6079 (0.6079)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.531)
+Epoch: [57][200/391]	Time 0.029 (0.026)	Data 0.006 (0.003)	Total Loss 0.7314 (0.6802)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (91.142)
+Train: [Average Loss 0.7243]	[Accuracy 90.484]
+Test: [Average Loss 1.2572]	[Accuracy 67.460]
+Current learning rate: 0.040323
+
+Epoch 58 started...
+Epoch: [58][0/391]	Time 0.219 (0.219)	Data 0.184 (0.184)	Total Loss 0.8270 (0.8270)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (88.281)
+Epoch: [58][200/391]	Time 0.033 (0.026)	Data 0.010 (0.003)	Total Loss 0.7074 (0.6721)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (91.445)
+Train: [Average Loss 0.7067]	[Accuracy 90.790]
+Test: [Average Loss 1.2462]	[Accuracy 67.070]
+Current learning rate: 0.040011
+
+Epoch 59 started...
+Epoch: [59][0/391]	Time 0.214 (0.214)	Data 0.185 (0.185)	Total Loss 0.6649 (0.6649)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.844)
+Epoch: [59][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 0.6420 (0.6817)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (91.406)
+Train: [Average Loss 0.7039]	[Accuracy 90.956]
+Test: [Average Loss 1.2239]	[Accuracy 67.730]
+Current learning rate: 0.039695
+
+Epoch 60 started...
+Epoch: [60][0/391]	Time 0.200 (0.200)	Data 0.174 (0.174)	Total Loss 0.8680 (0.8680)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (88.281)
+Epoch: [60][200/391]	Time 0.036 (0.028)	Data 0.015 (0.005)	Total Loss 0.4826 (0.6540)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (92.016)
+Train: [Average Loss 0.6937]	[Accuracy 91.250]
+Test: [Average Loss 1.2343]	[Accuracy 67.870]
+Current learning rate: 0.039375
+
+Epoch 61 started...
+Epoch: [61][0/391]	Time 0.207 (0.207)	Data 0.179 (0.179)	Total Loss 0.7145 (0.7145)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.844)
+Epoch: [61][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.7550 (0.6509)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (91.915)
+Train: [Average Loss 0.6847]	[Accuracy 91.464]
+Test: [Average Loss 1.2730]	[Accuracy 67.280]
+Current learning rate: 0.039052
+
+Epoch 62 started...
+Epoch: [62][0/391]	Time 0.214 (0.214)	Data 0.180 (0.180)	Total Loss 0.6657 (0.6657)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (92.969)
+Epoch: [62][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.5740 (0.6539)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (92.277)
+Train: [Average Loss 0.6837]	[Accuracy 91.654]
+Test: [Average Loss 1.2437]	[Accuracy 67.480]
+Current learning rate: 0.038726
+
+Epoch 63 started...
+Epoch: [63][0/391]	Time 0.206 (0.206)	Data 0.170 (0.170)	Total Loss 0.6470 (0.6470)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.062 (89.062)
+Epoch: [63][200/391]	Time 0.036 (0.026)	Data 0.015 (0.004)	Total Loss 0.6683 (0.6449)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (92.184)
+Train: [Average Loss 0.6727]	[Accuracy 91.654]
+Test: [Average Loss 1.2627]	[Accuracy 67.500]
+Current learning rate: 0.038396
+
+Epoch 64 started...
+Epoch: [64][0/391]	Time 0.204 (0.204)	Data 0.170 (0.170)	Total Loss 0.6236 (0.6236)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (92.969)
+Epoch: [64][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 0.7615 (0.6287)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (92.463)
+Train: [Average Loss 0.6695]	[Accuracy 91.700]
+Test: [Average Loss 1.2469]	[Accuracy 67.890]
+Current learning rate: 0.038062
+
+Epoch 65 started...
+Epoch: [65][0/391]	Time 0.206 (0.206)	Data 0.171 (0.171)	Total Loss 0.4494 (0.4494)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.312)
+Epoch: [65][200/391]	Time 0.038 (0.027)	Data 0.016 (0.005)	Total Loss 0.5869 (0.6085)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (92.934)
+Train: [Average Loss 0.6556]	[Accuracy 92.134]
+Test: [Average Loss 1.2316]	[Accuracy 68.230]
+Current learning rate: 0.037726
+
+Epoch 66 started...
+Epoch: [66][0/391]	Time 0.197 (0.197)	Data 0.171 (0.171)	Total Loss 0.5297 (0.5297)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.531)
+Epoch: [66][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 0.6340 (0.6153)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (92.704)
+Train: [Average Loss 0.6523]	[Accuracy 92.076]
+Test: [Average Loss 1.1841]	[Accuracy 69.340]
+Current learning rate: 0.037386
+
+Epoch 67 started...
+Epoch: [67][0/391]	Time 0.209 (0.209)	Data 0.178 (0.178)	Total Loss 0.5549 (0.5549)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [67][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.8614 (0.6045)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 87.500 (93.194)
+Train: [Average Loss 0.6467]	[Accuracy 92.306]
+Test: [Average Loss 1.2005]	[Accuracy 68.720]
+Current learning rate: 0.037044
+
+Epoch 68 started...
+Epoch: [68][0/391]	Time 0.208 (0.208)	Data 0.172 (0.172)	Total Loss 0.5184 (0.5184)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.312)
+Epoch: [68][200/391]	Time 0.032 (0.026)	Data 0.010 (0.003)	Total Loss 0.5983 (0.6101)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (92.969)
+Train: [Average Loss 0.6455]	[Accuracy 92.374]
+Test: [Average Loss 1.2097]	[Accuracy 68.870]
+Current learning rate: 0.036698
+
+Epoch 69 started...
+Epoch: [69][0/391]	Time 0.196 (0.196)	Data 0.168 (0.168)	Total Loss 0.6551 (0.6551)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [69][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.7768 (0.5952)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 88.281 (93.280)
+Train: [Average Loss 0.6343]	[Accuracy 92.680]
+Test: [Average Loss 1.2177]	[Accuracy 68.390]
+Current learning rate: 0.036350
+
+Epoch 70 started...
+Epoch: [70][0/391]	Time 0.198 (0.198)	Data 0.169 (0.169)	Total Loss 0.5654 (0.5654)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [70][200/391]	Time 0.030 (0.026)	Data 0.000 (0.003)	Total Loss 0.6770 (0.5846)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (93.513)
+Train: [Average Loss 0.6223]	[Accuracy 92.900]
+Test: [Average Loss 1.2515]	[Accuracy 67.770]
+Current learning rate: 0.035998
+
+Epoch 71 started...
+Epoch: [71][0/391]	Time 0.203 (0.203)	Data 0.177 (0.177)	Total Loss 0.5141 (0.5141)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (93.750)
+Epoch: [71][200/391]	Time 0.032 (0.025)	Data 0.009 (0.003)	Total Loss 0.7515 (0.6019)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (93.218)
+Train: [Average Loss 0.6247]	[Accuracy 92.732]
+Test: [Average Loss 1.2875]	[Accuracy 67.020]
+Current learning rate: 0.035644
+
+Epoch 72 started...
+Epoch: [72][0/391]	Time 0.207 (0.207)	Data 0.180 (0.180)	Total Loss 0.6168 (0.6168)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [72][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.6289 (0.5920)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (93.322)
+Train: [Average Loss 0.6152]	[Accuracy 92.982]
+Test: [Average Loss 1.2113]	[Accuracy 68.940]
+Current learning rate: 0.035288
+
+Epoch 73 started...
+Epoch: [73][0/391]	Time 0.204 (0.204)	Data 0.178 (0.178)	Total Loss 0.7118 (0.7118)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [73][200/391]	Time 0.023 (0.027)	Data 0.000 (0.004)	Total Loss 0.4605 (0.5660)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (93.894)
+Train: [Average Loss 0.5999]	[Accuracy 93.338]
+Test: [Average Loss 1.1914]	[Accuracy 69.070]
+Current learning rate: 0.034929
+
+Epoch 74 started...
+Epoch: [74][0/391]	Time 0.200 (0.200)	Data 0.172 (0.172)	Total Loss 0.3503 (0.3503)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [74][200/391]	Time 0.023 (0.027)	Data 0.000 (0.004)	Total Loss 0.6472 (0.5751)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (93.812)
+Train: [Average Loss 0.5929]	[Accuracy 93.510]
+Test: [Average Loss 1.1852]	[Accuracy 69.610]
+Current learning rate: 0.034567
+
+Epoch 75 started...
+Epoch: [75][0/391]	Time 0.209 (0.209)	Data 0.174 (0.174)	Total Loss 0.6156 (0.6156)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (92.969)
+Epoch: [75][200/391]	Time 0.027 (0.026)	Data 0.005 (0.003)	Total Loss 0.5675 (0.5541)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.193)
+Train: [Average Loss 0.5907]	[Accuracy 93.682]
+Test: [Average Loss 1.2376]	[Accuracy 68.470]
+Current learning rate: 0.034203
+
+Epoch 76 started...
+Epoch: [76][0/391]	Time 0.195 (0.195)	Data 0.169 (0.169)	Total Loss 0.6912 (0.6912)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (89.844)
+Epoch: [76][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.5727 (0.5681)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (93.828)
+Train: [Average Loss 0.5923]	[Accuracy 93.590]
+Test: [Average Loss 1.2214]	[Accuracy 69.290]
+Current learning rate: 0.033837
+
+Epoch 77 started...
+Epoch: [77][0/391]	Time 0.206 (0.206)	Data 0.170 (0.170)	Total Loss 0.5448 (0.5448)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.312)
+Epoch: [77][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.6933 (0.5318)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 89.844 (94.535)
+Train: [Average Loss 0.5794]	[Accuracy 93.816]
+Test: [Average Loss 1.2427]	[Accuracy 68.620]
+Current learning rate: 0.033468
+
+Epoch 78 started...
+Epoch: [78][0/391]	Time 0.206 (0.206)	Data 0.178 (0.178)	Total Loss 0.6239 (0.6239)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [78][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.6737 (0.5393)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (94.516)
+Train: [Average Loss 0.5710]	[Accuracy 93.876]
+Test: [Average Loss 1.3209]	[Accuracy 67.350]
+Current learning rate: 0.033098
+
+Epoch 79 started...
+Epoch: [79][0/391]	Time 0.215 (0.215)	Data 0.188 (0.188)	Total Loss 0.3855 (0.3855)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [79][200/391]	Time 0.036 (0.026)	Data 0.009 (0.003)	Total Loss 0.5742 (0.5266)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (94.442)
+Train: [Average Loss 0.5714]	[Accuracy 93.834]
+Test: [Average Loss 1.2696]	[Accuracy 67.680]
+Current learning rate: 0.032725
+
+Epoch 80 started...
+Epoch: [80][0/391]	Time 0.222 (0.222)	Data 0.187 (0.187)	Total Loss 0.5593 (0.5593)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.531)
+Epoch: [80][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.5066 (0.5135)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (94.811)
+Train: [Average Loss 0.5523]	[Accuracy 94.256]
+Test: [Average Loss 1.2378]	[Accuracy 68.370]
+Current learning rate: 0.032351
+
+Epoch 81 started...
+Epoch: [81][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 0.3283 (0.3283)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [81][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.6483 (0.5275)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.897)
+Train: [Average Loss 0.5551]	[Accuracy 94.430]
+Test: [Average Loss 1.2306]	[Accuracy 68.800]
+Current learning rate: 0.031975
+
+Epoch 82 started...
+Epoch: [82][0/391]	Time 0.200 (0.200)	Data 0.172 (0.172)	Total Loss 0.5787 (0.5787)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (92.969)
+Epoch: [82][200/391]	Time 0.036 (0.026)	Data 0.015 (0.004)	Total Loss 0.6903 (0.5019)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (95.145)
+Train: [Average Loss 0.5453]	[Accuracy 94.482]
+Test: [Average Loss 1.1838]	[Accuracy 69.150]
+Current learning rate: 0.031597
+
+Epoch 83 started...
+Epoch: [83][0/391]	Time 0.209 (0.209)	Data 0.180 (0.180)	Total Loss 0.5680 (0.5680)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (90.625)
+Epoch: [83][200/391]	Time 0.038 (0.027)	Data 0.015 (0.004)	Total Loss 0.5988 (0.4939)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (95.060)
+Train: [Average Loss 0.5271]	[Accuracy 94.666]
+Test: [Average Loss 1.2432]	[Accuracy 68.700]
+Current learning rate: 0.031217
+
+Epoch 84 started...
+Epoch: [84][0/391]	Time 0.199 (0.199)	Data 0.171 (0.171)	Total Loss 0.4326 (0.4326)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [84][200/391]	Time 0.044 (0.027)	Data 0.020 (0.004)	Total Loss 0.5448 (0.5015)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (94.897)
+Train: [Average Loss 0.5318]	[Accuracy 94.682]
+Test: [Average Loss 1.2442]	[Accuracy 68.550]
+Current learning rate: 0.030836
+
+Epoch 85 started...
+Epoch: [85][0/391]	Time 0.206 (0.206)	Data 0.170 (0.170)	Total Loss 0.3430 (0.3430)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [85][200/391]	Time 0.023 (0.027)	Data 0.000 (0.003)	Total Loss 0.5931 (0.4929)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (95.371)
+Train: [Average Loss 0.5307]	[Accuracy 94.868]
+Test: [Average Loss 1.2033]	[Accuracy 69.940]
+Current learning rate: 0.030454
+
+Epoch 86 started...
+Epoch: [86][0/391]	Time 0.221 (0.221)	Data 0.195 (0.195)	Total Loss 0.3764 (0.3764)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [86][200/391]	Time 0.022 (0.027)	Data 0.000 (0.003)	Total Loss 0.5884 (0.4658)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (95.600)
+Train: [Average Loss 0.5056]	[Accuracy 95.272]
+Test: [Average Loss 1.2542]	[Accuracy 68.650]
+Current learning rate: 0.030070
+
+Epoch 87 started...
+Epoch: [87][0/391]	Time 0.196 (0.196)	Data 0.168 (0.168)	Total Loss 0.5542 (0.5542)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.531)
+Epoch: [87][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.3846 (0.4890)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (95.542)
+Train: [Average Loss 0.5093]	[Accuracy 95.212]
+Test: [Average Loss 1.2750]	[Accuracy 68.700]
+Current learning rate: 0.029685
+
+Epoch 88 started...
+Epoch: [88][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 0.4650 (0.4650)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 94.531 (94.531)
+Epoch: [88][200/391]	Time 0.029 (0.026)	Data 0.006 (0.003)	Total Loss 0.4976 (0.4808)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.635)
+Train: [Average Loss 0.5075]	[Accuracy 95.210]
+Test: [Average Loss 1.2407]	[Accuracy 68.880]
+Current learning rate: 0.029298
+
+Epoch 89 started...
+Epoch: [89][0/391]	Time 0.210 (0.210)	Data 0.182 (0.182)	Total Loss 0.4749 (0.4749)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.312)
+Epoch: [89][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.3972 (0.4562)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (95.767)
+Train: [Average Loss 0.4836]	[Accuracy 95.528]
+Test: [Average Loss 1.2447]	[Accuracy 69.440]
+Current learning rate: 0.028911
+
+Epoch 90 started...
+Epoch: [90][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 0.4484 (0.4484)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (93.750)
+Epoch: [90][200/391]	Time 0.040 (0.027)	Data 0.017 (0.004)	Total Loss 0.3979 (0.4712)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (95.651)
+Train: [Average Loss 0.4948]	[Accuracy 95.390]
+Test: [Average Loss 1.2401]	[Accuracy 68.570]
+Current learning rate: 0.028523
+
+Epoch 91 started...
+Epoch: [91][0/391]	Time 0.198 (0.198)	Data 0.172 (0.172)	Total Loss 0.3982 (0.3982)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (95.312)
+Epoch: [91][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 0.5271 (0.4461)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (95.919)
+Train: [Average Loss 0.4853]	[Accuracy 95.500]
+Test: [Average Loss 1.2465]	[Accuracy 68.550]
+Current learning rate: 0.028133
+
+Epoch 92 started...
+Epoch: [92][0/391]	Time 0.209 (0.209)	Data 0.180 (0.180)	Total Loss 0.3215 (0.3215)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [92][200/391]	Time 0.027 (0.025)	Data 0.005 (0.003)	Total Loss 0.5327 (0.4354)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 93.750 (96.405)
+Train: [Average Loss 0.4736]	[Accuracy 95.820]
+Test: [Average Loss 1.2334]	[Accuracy 69.600]
+Current learning rate: 0.027743
+
+Epoch 93 started...
+Epoch: [93][0/391]	Time 0.210 (0.210)	Data 0.175 (0.175)	Total Loss 0.5634 (0.5634)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 91.406 (91.406)
+Epoch: [93][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.6584 (0.4272)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 90.625 (96.261)
+Train: [Average Loss 0.4619]	[Accuracy 95.840]
+Test: [Average Loss 1.2638]	[Accuracy 69.300]
+Current learning rate: 0.027353
+
+Epoch 94 started...
+Epoch: [94][0/391]	Time 0.223 (0.223)	Data 0.192 (0.192)	Total Loss 0.5221 (0.5221)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.969 (92.969)
+Epoch: [94][200/391]	Time 0.030 (0.026)	Data 0.008 (0.003)	Total Loss 0.3490 (0.4188)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.498)
+Train: [Average Loss 0.4502]	[Accuracy 96.104]
+Test: [Average Loss 1.2096]	[Accuracy 69.880]
+Current learning rate: 0.026961
+
+Epoch 95 started...
+Epoch: [95][0/391]	Time 0.199 (0.199)	Data 0.172 (0.172)	Total Loss 0.3465 (0.3465)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [95][200/391]	Time 0.023 (0.027)	Data 0.000 (0.004)	Total Loss 0.4978 (0.4150)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.576)
+Train: [Average Loss 0.4484]	[Accuracy 96.188]
+Test: [Average Loss 1.2934]	[Accuracy 67.940]
+Current learning rate: 0.026570
+
+Epoch 96 started...
+Epoch: [96][0/391]	Time 0.205 (0.205)	Data 0.176 (0.176)	Total Loss 0.4294 (0.4294)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [96][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.4332 (0.4355)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (96.397)
+Train: [Average Loss 0.4598]	[Accuracy 96.082]
+Test: [Average Loss 1.2741]	[Accuracy 68.520]
+Current learning rate: 0.026178
+
+Epoch 97 started...
+Epoch: [97][0/391]	Time 0.197 (0.197)	Data 0.168 (0.168)	Total Loss 0.6056 (0.6056)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (92.188)
+Epoch: [97][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.5176 (0.4109)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (96.607)
+Train: [Average Loss 0.4312]	[Accuracy 96.402]
+Test: [Average Loss 1.2006]	[Accuracy 69.970]
+Current learning rate: 0.025785
+
+Epoch 98 started...
+Epoch: [98][0/391]	Time 0.203 (0.203)	Data 0.168 (0.168)	Total Loss 0.2980 (0.2980)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [98][200/391]	Time 0.022 (0.027)	Data 0.000 (0.004)	Total Loss 0.4875 (0.3972)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (96.751)
+Train: [Average Loss 0.4230]	[Accuracy 96.504]
+Test: [Average Loss 1.2213]	[Accuracy 70.110]
+Current learning rate: 0.025393
+
+Epoch 99 started...
+Epoch: [99][0/391]	Time 0.201 (0.201)	Data 0.173 (0.173)	Total Loss 0.3140 (0.3140)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [99][200/391]	Time 0.027 (0.025)	Data 0.005 (0.003)	Total Loss 0.4127 (0.4010)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.813)
+Train: [Average Loss 0.4318]	[Accuracy 96.426]
+Test: [Average Loss 1.2391]	[Accuracy 69.420]
+Current learning rate: 0.025000
+
+Epoch 100 started...
+Epoch: [100][0/391]	Time 0.212 (0.212)	Data 0.184 (0.184)	Total Loss 0.3803 (0.3803)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [100][200/391]	Time 0.033 (0.025)	Data 0.012 (0.003)	Total Loss 0.4181 (0.3776)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (97.120)
+Train: [Average Loss 0.4087]	[Accuracy 96.770]
+Test: [Average Loss 1.2539]	[Accuracy 69.160]
+Current learning rate: 0.024607
+
+Epoch 101 started...
+Epoch: [101][0/391]	Time 0.208 (0.208)	Data 0.174 (0.174)	Total Loss 0.4373 (0.4373)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (96.094)
+Epoch: [101][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.3634 (0.3893)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (97.132)
+Train: [Average Loss 0.4141]	[Accuracy 96.736]
+Test: [Average Loss 1.2401]	[Accuracy 69.440]
+Current learning rate: 0.024215
+
+Epoch 102 started...
+Epoch: [102][0/391]	Time 0.213 (0.213)	Data 0.179 (0.179)	Total Loss 0.2900 (0.2900)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [102][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.4645 (0.3889)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.124)
+Train: [Average Loss 0.4065]	[Accuracy 96.856]
+Test: [Average Loss 1.1996]	[Accuracy 70.960]
+Current learning rate: 0.023822
+
+Epoch 103 started...
+Epoch: [103][0/391]	Time 0.202 (0.202)	Data 0.174 (0.174)	Total Loss 0.4029 (0.4029)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [103][200/391]	Time 0.024 (0.026)	Data 0.000 (0.003)	Total Loss 0.3055 (0.3676)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 95.312 (97.303)
+Train: [Average Loss 0.3933]	[Accuracy 96.992]
+Test: [Average Loss 1.2337]	[Accuracy 70.260]
+Current learning rate: 0.023430
+
+Epoch 104 started...
+Epoch: [104][0/391]	Time 0.203 (0.203)	Data 0.167 (0.167)	Total Loss 0.4132 (0.4132)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [104][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.3316 (0.3683)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (97.349)
+Train: [Average Loss 0.3914]	[Accuracy 97.116]
+Test: [Average Loss 1.2362]	[Accuracy 69.570]
+Current learning rate: 0.023039
+
+Epoch 105 started...
+Epoch: [105][0/391]	Time 0.225 (0.225)	Data 0.198 (0.198)	Total Loss 0.4808 (0.4808)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [105][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.5506 (0.3542)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 92.188 (97.384)
+Train: [Average Loss 0.3828]	[Accuracy 97.122]
+Test: [Average Loss 1.1575]	[Accuracy 70.420]
+Current learning rate: 0.022647
+
+Epoch 106 started...
+Epoch: [106][0/391]	Time 0.210 (0.210)	Data 0.176 (0.176)	Total Loss 0.2647 (0.2647)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [106][200/391]	Time 0.032 (0.025)	Data 0.010 (0.003)	Total Loss 0.4554 (0.3518)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (97.493)
+Train: [Average Loss 0.3742]	[Accuracy 97.334]
+Test: [Average Loss 1.2487]	[Accuracy 69.530]
+Current learning rate: 0.022257
+
+Epoch 107 started...
+Epoch: [107][0/391]	Time 0.204 (0.204)	Data 0.175 (0.175)	Total Loss 0.4366 (0.4366)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [107][200/391]	Time 0.034 (0.025)	Data 0.012 (0.003)	Total Loss 0.4454 (0.3469)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (97.512)
+Train: [Average Loss 0.3694]	[Accuracy 97.350]
+Test: [Average Loss 1.1803]	[Accuracy 70.930]
+Current learning rate: 0.021867
+
+Epoch 108 started...
+Epoch: [108][0/391]	Time 0.205 (0.205)	Data 0.170 (0.170)	Total Loss 0.2397 (0.2397)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [108][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 0.3328 (0.3419)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (97.544)
+Train: [Average Loss 0.3668]	[Accuracy 97.320]
+Test: [Average Loss 1.2491]	[Accuracy 69.770]
+Current learning rate: 0.021477
+
+Epoch 109 started...
+Epoch: [109][0/391]	Time 0.203 (0.203)	Data 0.175 (0.175)	Total Loss 0.3227 (0.3227)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [109][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.3872 (0.3289)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.742)
+Train: [Average Loss 0.3511]	[Accuracy 97.534]
+Test: [Average Loss 1.1582]	[Accuracy 71.640]
+Current learning rate: 0.021089
+
+Epoch 110 started...
+Epoch: [110][0/391]	Time 0.209 (0.209)	Data 0.182 (0.182)	Total Loss 0.3161 (0.3161)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [110][200/391]	Time 0.021 (0.027)	Data 0.000 (0.003)	Total Loss 0.3882 (0.3149)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.847)
+Train: [Average Loss 0.3436]	[Accuracy 97.598]
+Test: [Average Loss 1.2042]	[Accuracy 70.420]
+Current learning rate: 0.020702
+
+Epoch 111 started...
+Epoch: [111][0/391]	Time 0.202 (0.202)	Data 0.176 (0.176)	Total Loss 0.2612 (0.2612)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [111][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.2981 (0.3155)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.022)
+Train: [Average Loss 0.3309]	[Accuracy 97.844]
+Test: [Average Loss 1.1459]	[Accuracy 71.360]
+Current learning rate: 0.020315
+
+Epoch 112 started...
+Epoch: [112][0/391]	Time 0.210 (0.210)	Data 0.174 (0.174)	Total Loss 0.2587 (0.2587)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [112][200/391]	Time 0.029 (0.026)	Data 0.000 (0.003)	Total Loss 0.3321 (0.3189)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (97.854)
+Train: [Average Loss 0.3381]	[Accuracy 97.656]
+Test: [Average Loss 1.2010]	[Accuracy 70.450]
+Current learning rate: 0.019930
+
+Epoch 113 started...
+Epoch: [113][0/391]	Time 0.201 (0.201)	Data 0.173 (0.173)	Total Loss 0.2542 (0.2542)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [113][200/391]	Time 0.042 (0.026)	Data 0.013 (0.004)	Total Loss 0.2823 (0.3055)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.037)
+Train: [Average Loss 0.3235]	[Accuracy 97.842]
+Test: [Average Loss 1.2012]	[Accuracy 71.050]
+Current learning rate: 0.019546
+
+Epoch 114 started...
+Epoch: [114][0/391]	Time 0.217 (0.217)	Data 0.188 (0.188)	Total Loss 0.2800 (0.2800)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [114][200/391]	Time 0.030 (0.026)	Data 0.009 (0.004)	Total Loss 0.3805 (0.2965)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.045)
+Train: [Average Loss 0.3200]	[Accuracy 97.820]
+Test: [Average Loss 1.1800]	[Accuracy 71.090]
+Current learning rate: 0.019164
+
+Epoch 115 started...
+Epoch: [115][0/391]	Time 0.214 (0.214)	Data 0.180 (0.180)	Total Loss 0.2594 (0.2594)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [115][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.4357 (0.2985)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.014)
+Train: [Average Loss 0.3062]	[Accuracy 97.994]
+Test: [Average Loss 1.1690]	[Accuracy 71.700]
+Current learning rate: 0.018783
+
+Epoch 116 started...
+Epoch: [116][0/391]	Time 0.211 (0.211)	Data 0.176 (0.176)	Total Loss 0.2020 (0.2020)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [116][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.3201 (0.2823)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.228)
+Train: [Average Loss 0.3039]	[Accuracy 98.026]
+Test: [Average Loss 1.1484]	[Accuracy 72.420]
+Current learning rate: 0.018403
+
+Epoch 117 started...
+Epoch: [117][0/391]	Time 0.197 (0.197)	Data 0.168 (0.168)	Total Loss 0.2809 (0.2809)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [117][200/391]	Time 0.042 (0.026)	Data 0.019 (0.004)	Total Loss 0.2563 (0.2813)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.103)
+Train: [Average Loss 0.2936]	[Accuracy 98.046]
+Test: [Average Loss 1.1726]	[Accuracy 71.440]
+Current learning rate: 0.018025
+
+Epoch 118 started...
+Epoch: [118][0/391]	Time 0.202 (0.202)	Data 0.176 (0.176)	Total Loss 0.2968 (0.2968)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [118][200/391]	Time 0.037 (0.026)	Data 0.016 (0.003)	Total Loss 0.2724 (0.2814)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.298)
+Train: [Average Loss 0.2903]	[Accuracy 98.180]
+Test: [Average Loss 1.1988]	[Accuracy 71.930]
+Current learning rate: 0.017649
+
+Epoch 119 started...
+Epoch: [119][0/391]	Time 0.201 (0.201)	Data 0.172 (0.172)	Total Loss 0.2337 (0.2337)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [119][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.3385 (0.2736)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.282)
+Train: [Average Loss 0.2817]	[Accuracy 98.188]
+Test: [Average Loss 1.1799]	[Accuracy 71.230]
+Current learning rate: 0.017275
+
+Epoch 120 started...
+Epoch: [120][0/391]	Time 0.203 (0.203)	Data 0.177 (0.177)	Total Loss 0.2058 (0.2058)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [120][200/391]	Time 0.031 (0.026)	Data 0.000 (0.004)	Total Loss 0.2570 (0.2626)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.457)
+Train: [Average Loss 0.2756]	[Accuracy 98.352]
+Test: [Average Loss 1.1986]	[Accuracy 71.120]
+Current learning rate: 0.016902
+
+Epoch 121 started...
+Epoch: [121][0/391]	Time 0.211 (0.211)	Data 0.185 (0.185)	Total Loss 0.2355 (0.2355)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [121][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.3677 (0.2592)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (98.480)
+Train: [Average Loss 0.2703]	[Accuracy 98.398]
+Test: [Average Loss 1.1767]	[Accuracy 71.640]
+Current learning rate: 0.016532
+
+Epoch 122 started...
+Epoch: [122][0/391]	Time 0.204 (0.204)	Data 0.176 (0.176)	Total Loss 0.2007 (0.2007)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [122][200/391]	Time 0.035 (0.025)	Data 0.014 (0.003)	Total Loss 0.2006 (0.2586)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.333)
+Train: [Average Loss 0.2652]	[Accuracy 98.346]
+Test: [Average Loss 1.1438]	[Accuracy 72.040]
+Current learning rate: 0.016163
+
+Epoch 123 started...
+Epoch: [123][0/391]	Time 0.206 (0.206)	Data 0.180 (0.180)	Total Loss 0.2395 (0.2395)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [123][200/391]	Time 0.050 (0.027)	Data 0.020 (0.004)	Total Loss 0.2937 (0.2545)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.523)
+Train: [Average Loss 0.2660]	[Accuracy 98.414]
+Test: [Average Loss 1.2266]	[Accuracy 70.260]
+Current learning rate: 0.015797
+
+Epoch 124 started...
+Epoch: [124][0/391]	Time 0.207 (0.207)	Data 0.172 (0.172)	Total Loss 0.2231 (0.2231)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [124][200/391]	Time 0.025 (0.027)	Data 0.000 (0.005)	Total Loss 0.1846 (0.2348)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (98.612)
+Train: [Average Loss 0.2437]	[Accuracy 98.606]
+Test: [Average Loss 1.1454]	[Accuracy 72.430]
+Current learning rate: 0.015433
+
+Epoch 125 started...
+Epoch: [125][0/391]	Time 0.209 (0.209)	Data 0.175 (0.175)	Total Loss 0.1853 (0.1853)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [125][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 0.2190 (0.2327)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.663)
+Train: [Average Loss 0.2449]	[Accuracy 98.610]
+Test: [Average Loss 1.2002]	[Accuracy 71.560]
+Current learning rate: 0.015071
+
+Epoch 126 started...
+Epoch: [126][0/391]	Time 0.198 (0.198)	Data 0.172 (0.172)	Total Loss 0.2462 (0.2462)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [126][200/391]	Time 0.028 (0.026)	Data 0.007 (0.003)	Total Loss 0.2582 (0.2327)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.570)
+Train: [Average Loss 0.2436]	[Accuracy 98.524]
+Test: [Average Loss 1.1318]	[Accuracy 72.880]
+Current learning rate: 0.014712
+
+Epoch 127 started...
+Epoch: [127][0/391]	Time 0.196 (0.196)	Data 0.170 (0.170)	Total Loss 0.2450 (0.2450)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [127][200/391]	Time 0.029 (0.026)	Data 0.008 (0.003)	Total Loss 0.2472 (0.2283)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.764)
+Train: [Average Loss 0.2363]	[Accuracy 98.666]
+Test: [Average Loss 1.1393]	[Accuracy 72.860]
+Current learning rate: 0.014356
+
+Epoch 128 started...
+Epoch: [128][0/391]	Time 0.199 (0.199)	Data 0.173 (0.173)	Total Loss 0.2226 (0.2226)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [128][200/391]	Time 0.022 (0.027)	Data 0.000 (0.004)	Total Loss 0.2029 (0.2181)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.791)
+Train: [Average Loss 0.2293]	[Accuracy 98.746]
+Test: [Average Loss 1.1715]	[Accuracy 71.960]
+Current learning rate: 0.014002
+
+Epoch 129 started...
+Epoch: [129][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 0.2113 (0.2113)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [129][200/391]	Time 0.026 (0.026)	Data 0.000 (0.003)	Total Loss 0.1625 (0.2114)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (98.838)
+Train: [Average Loss 0.2191]	[Accuracy 98.770]
+Test: [Average Loss 1.1282]	[Accuracy 72.790]
+Current learning rate: 0.013650
+
+Epoch 130 started...
+Epoch: [130][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.2600 (0.2600)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (96.875)
+Epoch: [130][200/391]	Time 0.025 (0.025)	Data 0.000 (0.003)	Total Loss 0.2744 (0.2011)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (98.966)
+Train: [Average Loss 0.2172]	[Accuracy 98.814]
+Test: [Average Loss 1.1476]	[Accuracy 72.310]
+Current learning rate: 0.013302
+
+Epoch 131 started...
+Epoch: [131][0/391]	Time 0.194 (0.194)	Data 0.168 (0.168)	Total Loss 0.2219 (0.2219)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [131][200/391]	Time 0.021 (0.025)	Data 0.000 (0.004)	Total Loss 0.1831 (0.1978)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (98.970)
+Train: [Average Loss 0.2076]	[Accuracy 98.860]
+Test: [Average Loss 1.1539]	[Accuracy 72.250]
+Current learning rate: 0.012956
+
+Epoch 132 started...
+Epoch: [132][0/391]	Time 0.211 (0.211)	Data 0.175 (0.175)	Total Loss 0.2081 (0.2081)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [132][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.2976 (0.2023)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.094 (98.826)
+Train: [Average Loss 0.2081]	[Accuracy 98.842]
+Test: [Average Loss 1.1363]	[Accuracy 72.830]
+Current learning rate: 0.012614
+
+Epoch 133 started...
+Epoch: [133][0/391]	Time 0.205 (0.205)	Data 0.176 (0.176)	Total Loss 0.1860 (0.1860)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [133][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.1873 (0.1832)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (98.958)
+Train: [Average Loss 0.1910]	[Accuracy 98.926]
+Test: [Average Loss 1.1411]	[Accuracy 72.780]
+Current learning rate: 0.012274
+
+Epoch 134 started...
+Epoch: [134][0/391]	Time 0.206 (0.206)	Data 0.171 (0.171)	Total Loss 0.1200 (0.1200)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [134][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.1265 (0.1766)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.036)
+Train: [Average Loss 0.1849]	[Accuracy 99.016]
+Test: [Average Loss 1.1302]	[Accuracy 72.440]
+Current learning rate: 0.011938
+
+Epoch 135 started...
+Epoch: [135][0/391]	Time 0.197 (0.197)	Data 0.171 (0.171)	Total Loss 0.2781 (0.2781)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [135][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.1898 (0.1767)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (99.067)
+Train: [Average Loss 0.1852]	[Accuracy 99.016]
+Test: [Average Loss 1.0827]	[Accuracy 73.350]
+Current learning rate: 0.011604
+
+Epoch 136 started...
+Epoch: [136][0/391]	Time 0.201 (0.201)	Data 0.174 (0.174)	Total Loss 0.1623 (0.1623)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [136][200/391]	Time 0.022 (0.027)	Data 0.000 (0.004)	Total Loss 0.1501 (0.1691)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.110)
+Train: [Average Loss 0.1778]	[Accuracy 99.100]
+Test: [Average Loss 1.1165]	[Accuracy 72.750]
+Current learning rate: 0.011274
+
+Epoch 137 started...
+Epoch: [137][0/391]	Time 0.205 (0.205)	Data 0.177 (0.177)	Total Loss 0.1792 (0.1792)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [137][200/391]	Time 0.025 (0.026)	Data 0.000 (0.003)	Total Loss 0.1567 (0.1659)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.269)
+Train: [Average Loss 0.1694]	[Accuracy 99.220]
+Test: [Average Loss 1.0744]	[Accuracy 73.300]
+Current learning rate: 0.010948
+
+Epoch 138 started...
+Epoch: [138][0/391]	Time 0.205 (0.205)	Data 0.176 (0.176)	Total Loss 0.1353 (0.1353)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [138][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.1215 (0.1623)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.238)
+Train: [Average Loss 0.1725]	[Accuracy 99.130]
+Test: [Average Loss 1.0971]	[Accuracy 73.240]
+Current learning rate: 0.010625
+
+Epoch 139 started...
+Epoch: [139][0/391]	Time 0.201 (0.201)	Data 0.175 (0.175)	Total Loss 0.1277 (0.1277)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [139][200/391]	Time 0.021 (0.025)	Data 0.000 (0.002)	Total Loss 0.1162 (0.1621)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.164)
+Train: [Average Loss 0.1671]	[Accuracy 99.120]
+Test: [Average Loss 1.0836]	[Accuracy 73.510]
+Current learning rate: 0.010305
+
+Epoch 140 started...
+Epoch: [140][0/391]	Time 0.208 (0.208)	Data 0.181 (0.181)	Total Loss 0.1567 (0.1567)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [140][200/391]	Time 0.033 (0.026)	Data 0.012 (0.003)	Total Loss 0.1875 (0.1509)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.265)
+Train: [Average Loss 0.1608]	[Accuracy 99.170]
+Test: [Average Loss 1.0690]	[Accuracy 73.960]
+Current learning rate: 0.009989
+
+Epoch 141 started...
+Epoch: [141][0/391]	Time 0.210 (0.210)	Data 0.184 (0.184)	Total Loss 0.1738 (0.1738)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [141][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.2368 (0.1526)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.149)
+Train: [Average Loss 0.1553]	[Accuracy 99.184]
+Test: [Average Loss 1.0644]	[Accuracy 74.210]
+Current learning rate: 0.009677
+
+Epoch 142 started...
+Epoch: [142][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 0.1369 (0.1369)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [142][200/391]	Time 0.031 (0.026)	Data 0.009 (0.003)	Total Loss 0.2469 (0.1433)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (99.355)
+Train: [Average Loss 0.1467]	[Accuracy 99.340]
+Test: [Average Loss 1.0605]	[Accuracy 74.190]
+Current learning rate: 0.009369
+
+Epoch 143 started...
+Epoch: [143][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.1328 (0.1328)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [143][200/391]	Time 0.022 (0.027)	Data 0.000 (0.003)	Total Loss 0.0935 (0.1391)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.296)
+Train: [Average Loss 0.1429]	[Accuracy 99.260]
+Test: [Average Loss 1.0482]	[Accuracy 74.410]
+Current learning rate: 0.009064
+
+Epoch 144 started...
+Epoch: [144][0/391]	Time 0.209 (0.209)	Data 0.182 (0.182)	Total Loss 0.1375 (0.1375)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [144][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.1390 (0.1338)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.277)
+Train: [Average Loss 0.1367]	[Accuracy 99.320]
+Test: [Average Loss 1.0775]	[Accuracy 73.860]
+Current learning rate: 0.008764
+
+Epoch 145 started...
+Epoch: [145][0/391]	Time 0.204 (0.204)	Data 0.175 (0.175)	Total Loss 0.1200 (0.1200)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [145][200/391]	Time 0.022 (0.028)	Data 0.000 (0.004)	Total Loss 0.1286 (0.1295)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.366)
+Train: [Average Loss 0.1324]	[Accuracy 99.320]
+Test: [Average Loss 1.0499]	[Accuracy 74.120]
+Current learning rate: 0.008467
+
+Epoch 146 started...
+Epoch: [146][0/391]	Time 0.205 (0.205)	Data 0.178 (0.178)	Total Loss 0.0885 (0.0885)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [146][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.0748 (0.1180)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.394)
+Train: [Average Loss 0.1206]	[Accuracy 99.408]
+Test: [Average Loss 1.0494]	[Accuracy 74.280]
+Current learning rate: 0.008175
+
+Epoch 147 started...
+Epoch: [147][0/391]	Time 0.198 (0.198)	Data 0.170 (0.170)	Total Loss 0.1657 (0.1657)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [147][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.1137 (0.1185)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (99.433)
+Train: [Average Loss 0.1228]	[Accuracy 99.414]
+Test: [Average Loss 1.0549]	[Accuracy 74.140]
+Current learning rate: 0.007886
+
+Epoch 148 started...
+Epoch: [148][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 0.2221 (0.2221)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [148][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.0398 (0.1141)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.409)
+Train: [Average Loss 0.1188]	[Accuracy 99.346]
+Test: [Average Loss 1.0344]	[Accuracy 74.630]
+Current learning rate: 0.007602
+
+Epoch 149 started...
+Epoch: [149][0/391]	Time 0.215 (0.215)	Data 0.187 (0.187)	Total Loss 0.1279 (0.1279)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [149][200/391]	Time 0.022 (0.026)	Data 0.000 (0.004)	Total Loss 0.1348 (0.1063)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.479)
+Train: [Average Loss 0.1100]	[Accuracy 99.432]
+Test: [Average Loss 1.0212]	[Accuracy 74.860]
+Current learning rate: 0.007322
+
+Epoch 150 started...
+Epoch: [150][0/391]	Time 0.206 (0.206)	Data 0.180 (0.180)	Total Loss 0.0936 (0.0936)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [150][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.0666 (0.1034)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.440)
+Train: [Average Loss 0.1040]	[Accuracy 99.444]
+Test: [Average Loss 1.0128]	[Accuracy 75.120]
+Current learning rate: 0.007047
+
+Epoch 151 started...
+Epoch: [151][0/391]	Time 0.215 (0.215)	Data 0.185 (0.185)	Total Loss 0.0585 (0.0585)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [151][200/391]	Time 0.028 (0.026)	Data 0.006 (0.003)	Total Loss 0.1175 (0.0993)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.382)
+Train: [Average Loss 0.1020]	[Accuracy 99.366]
+Test: [Average Loss 1.0322]	[Accuracy 75.070]
+Current learning rate: 0.006776
+
+Epoch 152 started...
+Epoch: [152][0/391]	Time 0.206 (0.206)	Data 0.178 (0.178)	Total Loss 0.0994 (0.0994)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [152][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.0962 (0.0927)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.479)
+Train: [Average Loss 0.0979]	[Accuracy 99.448]
+Test: [Average Loss 1.0108]	[Accuracy 75.060]
+Current learning rate: 0.006509
+
+Epoch 153 started...
+Epoch: [153][0/391]	Time 0.213 (0.213)	Data 0.179 (0.179)	Total Loss 0.0685 (0.0685)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [153][200/391]	Time 0.063 (0.027)	Data 0.041 (0.003)	Total Loss 0.1315 (0.0963)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (99.502)
+Train: [Average Loss 0.0962]	[Accuracy 99.486]
+Test: [Average Loss 1.0221]	[Accuracy 74.290]
+Current learning rate: 0.006247
+
+Epoch 154 started...
+Epoch: [154][0/391]	Time 0.210 (0.210)	Data 0.176 (0.176)	Total Loss 0.0755 (0.0755)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [154][200/391]	Time 0.025 (0.026)	Data 0.000 (0.003)	Total Loss 0.1573 (0.0853)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (99.557)
+Train: [Average Loss 0.0877]	[Accuracy 99.550]
+Test: [Average Loss 1.0128]	[Accuracy 75.230]
+Current learning rate: 0.005990
+
+Epoch 155 started...
+Epoch: [155][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 0.0594 (0.0594)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [155][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.0974 (0.0821)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.541)
+Train: [Average Loss 0.0876]	[Accuracy 99.494]
+Test: [Average Loss 1.0053]	[Accuracy 75.070]
+Current learning rate: 0.005737
+
+Epoch 156 started...
+Epoch: [156][0/391]	Time 0.208 (0.208)	Data 0.181 (0.181)	Total Loss 0.0603 (0.0603)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [156][200/391]	Time 0.031 (0.026)	Data 0.010 (0.004)	Total Loss 0.1489 (0.0802)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.580)
+Train: [Average Loss 0.0831]	[Accuracy 99.544]
+Test: [Average Loss 1.0145]	[Accuracy 74.720]
+Current learning rate: 0.005489
+
+Epoch 157 started...
+Epoch: [157][0/391]	Time 0.198 (0.198)	Data 0.172 (0.172)	Total Loss 0.1307 (0.1307)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [157][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.1278 (0.0830)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.534)
+Train: [Average Loss 0.0852]	[Accuracy 99.524]
+Test: [Average Loss 0.9945]	[Accuracy 75.100]
+Current learning rate: 0.005246
+
+Epoch 158 started...
+Epoch: [158][0/391]	Time 0.222 (0.222)	Data 0.186 (0.186)	Total Loss 0.0655 (0.0655)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [158][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.0811 (0.0755)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.557)
+Train: [Average Loss 0.0769]	[Accuracy 99.544]
+Test: [Average Loss 0.9769]	[Accuracy 76.000]
+Current learning rate: 0.005008
+
+Epoch 159 started...
+Epoch: [159][0/391]	Time 0.203 (0.203)	Data 0.177 (0.177)	Total Loss 0.0325 (0.0325)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [159][200/391]	Time 0.037 (0.026)	Data 0.015 (0.004)	Total Loss 0.0724 (0.0757)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.468)
+Train: [Average Loss 0.0777]	[Accuracy 99.456]
+Test: [Average Loss 0.9651]	[Accuracy 76.100]
+Current learning rate: 0.004775
+
+Epoch 160 started...
+Epoch: [160][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 0.0299 (0.0299)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [160][200/391]	Time 0.037 (0.026)	Data 0.014 (0.003)	Total Loss 0.0636 (0.0725)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.549)
+Train: [Average Loss 0.0716]	[Accuracy 99.564]
+Test: [Average Loss 0.9619]	[Accuracy 76.050]
+Current learning rate: 0.004546
+
+Epoch 161 started...
+Epoch: [161][0/391]	Time 0.207 (0.207)	Data 0.180 (0.180)	Total Loss 0.0275 (0.0275)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [161][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.0448 (0.0653)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.615)
+Train: [Average Loss 0.0653]	[Accuracy 99.598]
+Test: [Average Loss 0.9688]	[Accuracy 76.070]
+Current learning rate: 0.004323
+
+Epoch 162 started...
+Epoch: [162][0/391]	Time 0.200 (0.200)	Data 0.172 (0.172)	Total Loss 0.0813 (0.0813)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [162][200/391]	Time 0.025 (0.026)	Data 0.000 (0.003)	Total Loss 0.0528 (0.0631)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.549)
+Train: [Average Loss 0.0648]	[Accuracy 99.562]
+Test: [Average Loss 0.9549]	[Accuracy 76.360]
+Current learning rate: 0.004105
+
+Epoch 163 started...
+Epoch: [163][0/391]	Time 0.204 (0.204)	Data 0.178 (0.178)	Total Loss 0.0343 (0.0343)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [163][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.0914 (0.0590)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.615)
+Train: [Average Loss 0.0619]	[Accuracy 99.576]
+Test: [Average Loss 0.9600]	[Accuracy 76.510]
+Current learning rate: 0.003892
+
+Epoch 164 started...
+Epoch: [164][0/391]	Time 0.210 (0.210)	Data 0.183 (0.183)	Total Loss 0.0647 (0.0647)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [164][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.0847 (0.0641)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.502)
+Train: [Average Loss 0.0622]	[Accuracy 99.560]
+Test: [Average Loss 0.9566]	[Accuracy 76.300]
+Current learning rate: 0.003684
+
+Epoch 165 started...
+Epoch: [165][0/391]	Time 0.207 (0.207)	Data 0.181 (0.181)	Total Loss 0.1221 (0.1221)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [165][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0829 (0.0562)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (99.572)
+Train: [Average Loss 0.0567]	[Accuracy 99.588]
+Test: [Average Loss 0.9419]	[Accuracy 76.100]
+Current learning rate: 0.003481
+
+Epoch 166 started...
+Epoch: [166][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.0459 (0.0459)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [166][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 0.0755 (0.0537)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.619)
+Train: [Average Loss 0.0547]	[Accuracy 99.618]
+Test: [Average Loss 0.9233]	[Accuracy 76.800]
+Current learning rate: 0.003284
+
+Epoch 167 started...
+Epoch: [167][0/391]	Time 0.208 (0.208)	Data 0.172 (0.172)	Total Loss 0.0522 (0.0522)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [167][200/391]	Time 0.021 (0.026)	Data 0.000 (0.004)	Total Loss 0.0456 (0.0572)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.557)
+Train: [Average Loss 0.0554]	[Accuracy 99.588]
+Test: [Average Loss 0.9302]	[Accuracy 76.690]
+Current learning rate: 0.003092
+
+Epoch 168 started...
+Epoch: [168][0/391]	Time 0.199 (0.199)	Data 0.173 (0.173)	Total Loss 0.0431 (0.0431)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [168][200/391]	Time 0.024 (0.026)	Data 0.000 (0.003)	Total Loss 0.0246 (0.0522)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.541)
+Train: [Average Loss 0.0524]	[Accuracy 99.556]
+Test: [Average Loss 0.9337]	[Accuracy 76.530]
+Current learning rate: 0.002906
+
+Epoch 169 started...
+Epoch: [169][0/391]	Time 0.199 (0.199)	Data 0.168 (0.168)	Total Loss 0.0273 (0.0273)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [169][200/391]	Time 0.024 (0.027)	Data 0.000 (0.003)	Total Loss 0.0427 (0.0489)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.588)
+Train: [Average Loss 0.0486]	[Accuracy 99.590]
+Test: [Average Loss 0.9276]	[Accuracy 76.910]
+Current learning rate: 0.002725
+
+Epoch 170 started...
+Epoch: [170][0/391]	Time 0.209 (0.209)	Data 0.173 (0.173)	Total Loss 0.0544 (0.0544)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [170][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0360 (0.0486)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.569)
+Train: [Average Loss 0.0479]	[Accuracy 99.576]
+Test: [Average Loss 0.9155]	[Accuracy 76.970]
+Current learning rate: 0.002549
+
+Epoch 171 started...
+Epoch: [171][0/391]	Time 0.203 (0.203)	Data 0.176 (0.176)	Total Loss 0.0357 (0.0357)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [171][200/391]	Time 0.022 (0.025)	Data 0.000 (0.004)	Total Loss 0.0732 (0.0449)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (99.604)
+Train: [Average Loss 0.0451]	[Accuracy 99.596]
+Test: [Average Loss 0.9195]	[Accuracy 77.060]
+Current learning rate: 0.002379
+
+Epoch 172 started...
+Epoch: [172][0/391]	Time 0.202 (0.202)	Data 0.172 (0.172)	Total Loss 0.0855 (0.0855)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [172][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.0423 (0.0487)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.464)
+Train: [Average Loss 0.0475]	[Accuracy 99.506]
+Test: [Average Loss 0.9186]	[Accuracy 76.860]
+Current learning rate: 0.002215
+
+Epoch 173 started...
+Epoch: [173][0/391]	Time 0.207 (0.207)	Data 0.173 (0.173)	Total Loss 0.0414 (0.0414)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [173][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.0258 (0.0438)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.541)
+Train: [Average Loss 0.0431]	[Accuracy 99.546]
+Test: [Average Loss 0.9077]	[Accuracy 76.970]
+Current learning rate: 0.002056
+
+Epoch 174 started...
+Epoch: [174][0/391]	Time 0.208 (0.208)	Data 0.172 (0.172)	Total Loss 0.0548 (0.0548)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [174][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.0395 (0.0411)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.534)
+Train: [Average Loss 0.0426]	[Accuracy 99.518]
+Test: [Average Loss 0.9049]	[Accuracy 76.990]
+Current learning rate: 0.001903
+
+Epoch 175 started...
+Epoch: [175][0/391]	Time 0.209 (0.209)	Data 0.183 (0.183)	Total Loss 0.0731 (0.0731)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [175][200/391]	Time 0.032 (0.026)	Data 0.009 (0.003)	Total Loss 0.0270 (0.0396)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.530)
+Train: [Average Loss 0.0397]	[Accuracy 99.538]
+Test: [Average Loss 0.9061]	[Accuracy 77.150]
+Current learning rate: 0.001756
+
+Epoch 176 started...
+Epoch: [176][0/391]	Time 0.202 (0.202)	Data 0.174 (0.174)	Total Loss 0.0681 (0.0681)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [176][200/391]	Time 0.024 (0.027)	Data 0.000 (0.003)	Total Loss 0.0090 (0.0392)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.549)
+Train: [Average Loss 0.0389]	[Accuracy 99.552]
+Test: [Average Loss 0.8931]	[Accuracy 77.350]
+Current learning rate: 0.001614
+
+Epoch 177 started...
+Epoch: [177][0/391]	Time 0.206 (0.206)	Data 0.173 (0.173)	Total Loss 0.0264 (0.0264)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [177][200/391]	Time 0.029 (0.026)	Data 0.006 (0.003)	Total Loss 0.0396 (0.0387)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.510)
+Train: [Average Loss 0.0380]	[Accuracy 99.522]
+Test: [Average Loss 0.8968]	[Accuracy 77.680]
+Current learning rate: 0.001478
+
+Epoch 178 started...
+Epoch: [178][0/391]	Time 0.199 (0.199)	Data 0.172 (0.172)	Total Loss 0.0450 (0.0450)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [178][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0504 (0.0365)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.526)
+Train: [Average Loss 0.0379]	[Accuracy 99.502]
+Test: [Average Loss 0.8975]	[Accuracy 77.230]
+Current learning rate: 0.001348
+
+Epoch 179 started...
+Epoch: [179][0/391]	Time 0.214 (0.214)	Data 0.179 (0.179)	Total Loss 0.0139 (0.0139)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [179][200/391]	Time 0.031 (0.025)	Data 0.010 (0.003)	Total Loss 0.0575 (0.0345)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.596)
+Train: [Average Loss 0.0345]	[Accuracy 99.586]
+Test: [Average Loss 0.8983]	[Accuracy 77.580]
+Current learning rate: 0.001224
+
+Epoch 180 started...
+Epoch: [180][0/391]	Time 0.199 (0.199)	Data 0.172 (0.172)	Total Loss 0.0323 (0.0323)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [180][200/391]	Time 0.036 (0.026)	Data 0.015 (0.004)	Total Loss 0.0188 (0.0364)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.526)
+Train: [Average Loss 0.0362]	[Accuracy 99.524]
+Test: [Average Loss 0.8945]	[Accuracy 77.310]
+Current learning rate: 0.001105
+
+Epoch 181 started...
+Epoch: [181][0/391]	Time 0.201 (0.201)	Data 0.174 (0.174)	Total Loss 0.0281 (0.0281)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [181][200/391]	Time 0.021 (0.025)	Data 0.000 (0.003)	Total Loss 0.0666 (0.0350)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.460)
+Train: [Average Loss 0.0340]	[Accuracy 99.510]
+Test: [Average Loss 0.8904]	[Accuracy 77.640]
+Current learning rate: 0.000993
+
+Epoch 182 started...
+Epoch: [182][0/391]	Time 0.206 (0.206)	Data 0.178 (0.178)	Total Loss 0.0253 (0.0253)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [182][200/391]	Time 0.022 (0.025)	Data 0.000 (0.002)	Total Loss 0.0219 (0.0333)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.475)
+Train: [Average Loss 0.0335]	[Accuracy 99.490]
+Test: [Average Loss 0.8939]	[Accuracy 77.610]
+Current learning rate: 0.000886
+
+Epoch 183 started...
+Epoch: [183][0/391]	Time 0.208 (0.208)	Data 0.182 (0.182)	Total Loss 0.0422 (0.0422)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [183][200/391]	Time 0.030 (0.026)	Data 0.008 (0.003)	Total Loss 0.0131 (0.0330)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.495)
+Train: [Average Loss 0.0327]	[Accuracy 99.480]
+Test: [Average Loss 0.8905]	[Accuracy 77.820]
+Current learning rate: 0.000785
+
+Epoch 184 started...
+Epoch: [184][0/391]	Time 0.197 (0.197)	Data 0.171 (0.171)	Total Loss 0.0119 (0.0119)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [184][200/391]	Time 0.029 (0.027)	Data 0.000 (0.003)	Total Loss 0.0216 (0.0328)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.483)
+Train: [Average Loss 0.0324]	[Accuracy 99.488]
+Test: [Average Loss 0.8882]	[Accuracy 77.650]
+Current learning rate: 0.000691
+
+Epoch 185 started...
+Epoch: [185][0/391]	Time 0.194 (0.194)	Data 0.165 (0.165)	Total Loss 0.0077 (0.0077)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [185][200/391]	Time 0.027 (0.026)	Data 0.006 (0.003)	Total Loss 0.0155 (0.0307)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.553)
+Train: [Average Loss 0.0321]	[Accuracy 99.504]
+Test: [Average Loss 0.8872]	[Accuracy 77.670]
+Current learning rate: 0.000602
+
+Epoch 186 started...
+Epoch: [186][0/391]	Time 0.203 (0.203)	Data 0.175 (0.175)	Total Loss 0.0619 (0.0619)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [186][200/391]	Time 0.028 (0.026)	Data 0.000 (0.003)	Total Loss 0.0234 (0.0328)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.448)
+Train: [Average Loss 0.0322]	[Accuracy 99.454]
+Test: [Average Loss 0.8858]	[Accuracy 77.760]
+Current learning rate: 0.000519
+
+Epoch 187 started...
+Epoch: [187][0/391]	Time 0.210 (0.210)	Data 0.183 (0.183)	Total Loss 0.0312 (0.0312)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [187][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0150 (0.0304)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.475)
+Train: [Average Loss 0.0297]	[Accuracy 99.488]
+Test: [Average Loss 0.8824]	[Accuracy 77.830]
+Current learning rate: 0.000443
+
+Epoch 188 started...
+Epoch: [188][0/391]	Time 0.202 (0.202)	Data 0.166 (0.166)	Total Loss 0.0546 (0.0546)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 97.656 (97.656)
+Epoch: [188][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.0342 (0.0307)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.436)
+Train: [Average Loss 0.0310]	[Accuracy 99.426]
+Test: [Average Loss 0.8888]	[Accuracy 77.760]
+Current learning rate: 0.000372
+
+Epoch 189 started...
+Epoch: [189][0/391]	Time 0.208 (0.208)	Data 0.180 (0.180)	Total Loss 0.0356 (0.0356)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [189][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0132 (0.0285)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.483)
+Train: [Average Loss 0.0286]	[Accuracy 99.492]
+Test: [Average Loss 0.8780]	[Accuracy 77.860]
+Current learning rate: 0.000308
+
+Epoch 190 started...
+Epoch: [190][0/391]	Time 0.208 (0.208)	Data 0.174 (0.174)	Total Loss 0.0397 (0.0397)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [190][200/391]	Time 0.025 (0.025)	Data 0.000 (0.003)	Total Loss 0.0306 (0.0294)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.471)
+Train: [Average Loss 0.0291]	[Accuracy 99.482]
+Test: [Average Loss 0.8850]	[Accuracy 77.500]
+Current learning rate: 0.000249
+
+Epoch 191 started...
+Epoch: [191][0/391]	Time 0.203 (0.203)	Data 0.175 (0.175)	Total Loss 0.0185 (0.0185)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [191][200/391]	Time 0.021 (0.026)	Data 0.000 (0.003)	Total Loss 0.0249 (0.0298)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.491)
+Train: [Average Loss 0.0290]	[Accuracy 99.484]
+Test: [Average Loss 0.8805]	[Accuracy 77.800]
+Current learning rate: 0.000197
+
+Epoch 192 started...
+Epoch: [192][0/391]	Time 0.205 (0.205)	Data 0.177 (0.177)	Total Loss 0.0467 (0.0467)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [192][200/391]	Time 0.023 (0.028)	Data 0.000 (0.004)	Total Loss 0.0361 (0.0279)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.530)
+Train: [Average Loss 0.0285]	[Accuracy 99.474]
+Test: [Average Loss 0.8819]	[Accuracy 77.840]
+Current learning rate: 0.000151
+
+Epoch 193 started...
+Epoch: [193][0/391]	Time 0.207 (0.207)	Data 0.171 (0.171)	Total Loss 0.0160 (0.0160)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [193][200/391]	Time 0.021 (0.027)	Data 0.000 (0.003)	Total Loss 0.0661 (0.0294)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 96.875 (99.355)
+Train: [Average Loss 0.0286]	[Accuracy 99.406]
+Test: [Average Loss 0.8810]	[Accuracy 78.030]
+Current learning rate: 0.000111
+
+Epoch 194 started...
+Epoch: [194][0/391]	Time 0.211 (0.211)	Data 0.177 (0.177)	Total Loss 0.0350 (0.0350)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [194][200/391]	Time 0.023 (0.026)	Data 0.000 (0.003)	Total Loss 0.0162 (0.0289)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.429)
+Train: [Average Loss 0.0284]	[Accuracy 99.442]
+Test: [Average Loss 0.8800]	[Accuracy 77.960]
+Current learning rate: 0.000077
+
+Epoch 195 started...
+Epoch: [195][0/391]	Time 0.198 (0.198)	Data 0.171 (0.171)	Total Loss 0.0431 (0.0431)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [195][200/391]	Time 0.023 (0.026)	Data 0.000 (0.004)	Total Loss 0.0208 (0.0299)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.378)
+Train: [Average Loss 0.0305]	[Accuracy 99.362]
+Test: [Average Loss 0.8828]	[Accuracy 77.950]
+Current learning rate: 0.000049
+
+Epoch 196 started...
+Epoch: [196][0/391]	Time 0.198 (0.198)	Data 0.172 (0.172)	Total Loss 0.0095 (0.0095)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (100.000)
+Epoch: [196][200/391]	Time 0.022 (0.025)	Data 0.000 (0.003)	Total Loss 0.0437 (0.0264)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.495)
+Train: [Average Loss 0.0276]	[Accuracy 99.478]
+Test: [Average Loss 0.8796]	[Accuracy 77.820]
+Current learning rate: 0.000028
+
+Epoch 197 started...
+Epoch: [197][0/391]	Time 0.197 (0.197)	Data 0.170 (0.170)	Total Loss 0.0457 (0.0457)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 98.438 (98.438)
+Epoch: [197][200/391]	Time 0.023 (0.025)	Data 0.000 (0.003)	Total Loss 0.0189 (0.0283)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.448)
+Train: [Average Loss 0.0288]	[Accuracy 99.400]
+Test: [Average Loss 0.8830]	[Accuracy 77.800]
+Current learning rate: 0.000012
+
+Epoch 198 started...
+Epoch: [198][0/391]	Time 0.204 (0.204)	Data 0.177 (0.177)	Total Loss 0.0216 (0.0216)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [198][200/391]	Time 0.024 (0.025)	Data 0.000 (0.003)	Total Loss 0.0333 (0.0275)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.479)
+Train: [Average Loss 0.0276]	[Accuracy 99.468]
+Test: [Average Loss 0.8778]	[Accuracy 77.860]
+Current learning rate: 0.000003
+
+Epoch 199 started...
+Epoch: [199][0/391]	Time 0.202 (0.202)	Data 0.175 (0.175)	Total Loss 0.0379 (0.0379)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 99.219 (99.219)
+Epoch: [199][200/391]	Time 0.022 (0.026)	Data 0.000 (0.003)	Total Loss 0.0072 (0.0299)	Loss1 0.0000 (0.0000)	Loss2 0.0000 (0.0000)	GVR Penalty 0.0000 (0.0000)	Train Acc 100.000 (99.366)
+Train: [Average Loss 0.0288]	[Accuracy 99.422]
+Test: [Average Loss 0.8836]	[Accuracy 78.000]
+Current learning rate: 0.000000
+
+--- Training Complete --- 
+Figure(1200x500)
+
+Plots saved to /content/drive/MyDrive/apd_project/runs/training_metrics.png
