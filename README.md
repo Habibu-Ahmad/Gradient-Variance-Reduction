@@ -37,3 +37,22 @@ total_loss = loss1 + loss2 + alpha * penalty
     </td>
   </tr>
 </table>
+
+## Project Structure 
+
+.
+├── src/                            # Source code
+│   ├── models.py                   # Model architecture (e.g., ResNet-18)
+│   ├── utils.py                    # Utility functions (data loading, transforms, etc.)
+│   └── run.py                      # Training script using GVR or SGD
+│
+├── Scripts/                        # Shell scripts to run experiments
+│   ├── run-gvr-cifar100.sh         # Run experiment with GVR
+│   └── run-sgd-cifar100.sh         # Run experiment with SGD
+│
+├── Results/                        # Experiment logs and visualizations
+│   ├── GVR_CIFAR100_ResNet18.log   # Training log for GVR
+│   ├── SGD_CIFAR100_ResNet18.log   # Training log for SGD
+│   └── gvr_sgd_accuracy1.png       # Accuracy comparison plot
+│
+├── README.md                       # Project documentation (this file)
