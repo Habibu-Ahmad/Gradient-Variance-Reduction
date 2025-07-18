@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td style="vertical-align: top; padding-right: 20px;">
+    <td style="vertical-align: top; padding-right: 30px;">
       <p>
         The proposed <strong>GVR</strong> is compared against SGD on CIFAR-100 using ResNet-18.
         Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
