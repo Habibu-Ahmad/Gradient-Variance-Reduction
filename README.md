@@ -4,9 +4,7 @@
 <table>
   <tr>
     <td style="vertical-align: top; padding-right: 30px;">
-      <p>
-        The <strong>GVR</strong> is compared against SGD on CIFAR-100 using ResNet-18.
-        GVR achieved <strong>79.09%</strong> test accuracy, outperforming SGD at <strong>78.00%</strong>.        
+      <p> 
       </p>
     </td>
     <td>
