@@ -12,6 +12,7 @@ Given two augmented views of the same input, `img1` and `img2`, and a shared lab
 
 
 This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations, improving generalization and potential robustness to label noise.
+Note that, for efficiency, gradients are computed only with respect to the last layer and the views are subsampled independently during each forward pass.
 
 **Code Snippet: GVR Step**
 ```python
