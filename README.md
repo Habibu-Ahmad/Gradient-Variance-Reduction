@@ -4,10 +4,8 @@
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
       <p>
-        The proposed <strong>GVR</strong> optimizer is compared against SGD on CIFAR-100 using ResNet-18.
+        The proposed <strong>GVR</strong> is compared against SGD on CIFAR-100 using ResNet-18.
         Both models were trained for 200 epochs with a batch size of 128 and standard augmentations (random crop, horizontal flip, Cutout).
-        <br/><br/>
-        SGD hyperparameters followed the SAM paper, while GVR used a penalty coefficient α = 0.01 based on light tuning.
         <br/><br/>
         GVR achieved <strong>79.09%</strong> test accuracy, outperforming SGD at <strong>78.00%</strong>.
       </p>
