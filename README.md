@@ -9,14 +9,8 @@ GVR is a novel gradient-based optimizer that introduces a variance penalty betwe
 
 Given two augmented views of the same input, `img1` and `img2`, and a shared label `y`, GVR minimizes:
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+<img width="1299" height="271" alt="gvr_eq" src="https://github.com/user-attachments/assets/329a058f-6ceb-4291-9801-0ddcef3b8860" />
 
-$$
-L_{\text{total}} = \mathcal{L}(f(\text{img}_1), y) + \mathcal{L}(f(\text{img}_2), y) + \alpha \cdot \| \nabla_\theta \mathcal{L}_1 - \nabla_\theta \mathcal{L}_2 \|^2
-$$
 
 
 This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations, improving generalization and potential robustness to label noise.
