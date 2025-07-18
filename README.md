@@ -9,7 +9,8 @@ GVR is a novel gradient-based optimizer that introduces a variance penalty betwe
 
 Given two augmented views of the same input, `img1` and `img2`, and a shared label `y`, GVR minimizes:
 
-**L_total = L(f(img1), y) + L(f(img2), y) + α ⋅ ||∇θL₁ − ∇θL₂||²**
+Let $L_\text{total} = \mathcal{L}(f(\text{img}_1), y) + \mathcal{L}(f(\text{img}_2), y) + \alpha \cdot \| \nabla_\theta \mathcal{L}_1 - \nabla_\theta \mathcal{L}_2 \|^2$
+
 
 This penalizes inconsistent gradients across augmentations, making the model less sensitive to minor perturbations, improving generalization and potential robustness to label noise.
 
