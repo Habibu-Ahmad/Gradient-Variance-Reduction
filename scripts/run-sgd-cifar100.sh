@@ -4,7 +4,7 @@
 python train.py \
     --arch resnet18 \
     --datasets CIFAR100 \
-    --epochs 2 \
+    --epochs 200 \
     --batch-size 128 \
     --lr 0.05 \
     --momentum 0.9 \
