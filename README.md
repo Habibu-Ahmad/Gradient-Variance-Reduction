@@ -39,8 +39,7 @@ total_loss = loss1 + loss2 + alpha * penalty
 </table>
 
 ## Project Structure 
-
-.
+<pre><code>.
 ├── src/                            # Source code
 │   ├── models.py                   # Model architecture (e.g., ResNet-18)
 │   ├── utils.py                    # Utility functions (data loading, transforms, etc.)
@@ -56,3 +55,4 @@ total_loss = loss1 + loss2 + alpha * penalty
 │   └── gvr_sgd_accuracy1.png       # Accuracy comparison plot
 │
 ├── README.md                       # Project documentation (this file)
+</code></pre>
