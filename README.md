@@ -1,7 +1,7 @@
 
 # Gradient-Variance-Regularization (GVR)
 
-GVR is a a novel gradient alignment regularization method that penalizes disagreement between gradients of augmented views of the same input. Inspired by consistency regularization and the geometry-aware motivation in SAM (Sharpness-Aware Minimization), GVR targets a new direction: minimizing *gradient variance* on the last layer to encourage stable and generalizable learning.
+GVR is a a gradient alignment regularization method that penalizes disagreement between gradients of augmented views of the same input. Inspired by consistency regularization and the geometry-aware motivation in SAM (Sharpness-Aware Minimization), GVR targets a new direction: minimizing *gradient variance* on the last layer to encourage stable and generalizable learning.
 
 ##  Core Idea
 
